@@ -8,12 +8,8 @@
       <change afterPath="$PROJECT_DIR$/public/fonts/Inter-VariableFont_slnt,wght.ttf" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/fonts/OFL.txt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/fonts/README.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/About.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Container.tsx" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/pages/Contacts.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Footer.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Header.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Hero.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Layout.tsx" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/pages/Portfolio.tsx" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/pages/Team.tsx" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/services/utils/types/types.ts" afterDir="false" />
@@ -24,6 +20,11 @@
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/About.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/About.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Hero.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Layout.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -96,7 +97,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1720878053669</updated>
-      <workItem from="1720878054851" duration="14747000" />
+      <workItem from="1720878054851" duration="23183000" />
     </task>
     <servers />
   </component>

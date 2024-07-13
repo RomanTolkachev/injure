@@ -7,7 +7,10 @@ export const Layout: FunctionComponent = () => {
     return (
         <>
             <Header />
-            <Outlet />
+            <section className="shrink grow">
+                <div className="h-[79px]"></div>
+                <Outlet />
+            </section>
             <Footer />
         </>
     )

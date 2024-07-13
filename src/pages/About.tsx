@@ -2,6 +2,6 @@ import {FunctionComponent} from "react";
 
 export const About: FunctionComponent = () => {
     return (
-        <div>я компонент</div>
+        <div className="bg-amber-200">я информация о нас</div>
     )
 }

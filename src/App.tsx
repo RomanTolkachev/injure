@@ -7,20 +7,25 @@ import {Services} from "./pages/Services";
 import {Team} from "./pages/Team";
 import {Portfolio} from "./pages/Portfolio";
 import {Contacts} from "./pages/Contacts";
+import {Container} from "./components/Container";
 
 function App(): React.JSX.Element {
 
   return (
-      <Routes>
-          <Route path="/" element={<Layout />}>
-              <Route path='/' element={<Hero/>}></Route>
-              <Route path='/about' element={<About/>}></Route>
-              <Route path='/services' element={<Services/>}></Route>
-              <Route path='/team' element={<Team />}></Route>
-              <Route path='/portfolio' element={<Portfolio />}></Route>
-              <Route path='/contacts' element={<Contacts />}></Route>
-          </Route>
-      </Routes>
+      <div className='font-Inter flex flex-col min-h-svh max-w-[100vw]'>
+          <Routes>
+              <Route path="/" element={<Layout />}>
+                  <Route path='/' element={<Hero />}></Route>
+                  <Route path='/' element={<Container />}>
+                      <Route path='/about' element={<About />}></Route>
+                      <Route path='/services' element={<Services />}></Route>
+                      <Route path='/team' element={<Team />}></Route>
+                      <Route path='/portfolio' element={<Portfolio />}></Route>
+                      <Route path='/contacts' element={<Contacts />}></Route>
+                  </Route>
+              </Route>
+          </Routes>
+      </div>
   )
 }
 
