@@ -5,10 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36b4ee8f-85ff-4484-9f99-05238c6d8ecb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/Inter-VariableFont_slnt,wght.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/OFL.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/About.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Contacts.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Footer.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Header.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Hero.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Layout.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Portfolio.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Team.tsx" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/services/utils/types/types.ts" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +37,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript File" />
         <option value="tsconfig.json" />
+        <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -52,12 +69,15 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "editing.templates",
     "ts.external.directory.path": "C:\\OSPanel\\domains\\injure\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\OSPanel\domains\injure\src\pages" />
+      <recent name="C:\OSPanel\domains\injure\public\fonts" />
       <recent name="C:\OSPanel\domains\injure\src\services" />
     </key>
   </component>
@@ -76,7 +96,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1720878053669</updated>
-      <workItem from="1720878054851" duration="7346000" />
+      <workItem from="1720878054851" duration="14747000" />
     </task>
     <servers />
   </component>

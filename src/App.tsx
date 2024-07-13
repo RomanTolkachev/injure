@@ -1,13 +1,26 @@
 import React from "react";
-import {useSelector} from "react-redux";
+import {Route, Routes} from "react-router-dom";
+import {Layout} from "./pages/Layout";
+import {Hero} from "./pages/Hero";
+import {About} from "./pages/About";
+import {Services} from "./pages/Services";
+import {Team} from "./pages/Team";
+import {Portfolio} from "./pages/Portfolio";
+import {Contacts} from "./pages/Contacts";
 
 function App(): React.JSX.Element {
 
-  const info = useSelector(state => state)
   return (
-        <div className='bg-amber-500 font-bold'>hello world
-        </div>
-
+      <Routes>
+          <Route path="/" element={<Layout />}>
+              <Route path='/' element={<Hero/>}></Route>
+              <Route path='/about' element={<About/>}></Route>
+              <Route path='/services' element={<Services/>}></Route>
+              <Route path='/team' element={<Team />}></Route>
+              <Route path='/portfolio' element={<Portfolio />}></Route>
+              <Route path='/contacts' element={<Contacts />}></Route>
+          </Route>
+      </Routes>
   )
 }
 
