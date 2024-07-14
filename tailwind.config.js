@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+const { scrollbarGutter, scrollbarWidth, scrollbarColor } = require('tailwind-scrollbar-utilities')
 module.exports = {
-  content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  content: ["./src/**/*.{js,jsx,ts,tsx,html}"],
   theme: {
     fontFamily: {
       'Inter': ['inter', 'sans-serif'],
@@ -22,9 +23,10 @@ module.exports = {
         'my-deep-gray': '#3D3D3D',
         'my-gray-medium': '#B7B7B7',
         'my-deep-light': '#C7C7C7',
+        'my-white': '#F6F6F6',
       },
     },
   },
-  plugins: [],
+  plugins: [require('tailwind-scrollbar'), require('tailwind-scrollbar-hide'), scrollbarGutter()],
 }
 

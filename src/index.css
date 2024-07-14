@@ -2,8 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+    * {
+        @apply scrollbar-thin
+    }
+    /*header {*/
+    /*    @apply scrollbar-thin scrollbar-stable*/
+    /*}*/
+    /*section {*/
+    /*    @apply scrollbar-thin scrollbar-stable*/
+    /*}*/
+}
+
 @font-face {
     font-family: "Inter";
     font-style: normal;
     src: url("/public/fonts/Inter-VariableFont_slnt,wght.ttf") format('truetype');
 }
+
+
