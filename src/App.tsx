@@ -16,13 +16,11 @@ function App(): React.JSX.Element {
           <Routes>
               <Route path="/" element={<Layout />}>
                   <Route path='/' element={<Hero />}></Route>
-                  <Route path='/' element={<Container />}>
-                      <Route path='/about' element={<About />}></Route>
-                      <Route path='/services' element={<Services />}></Route>
-                      <Route path='/team' element={<Team />}></Route>
-                      <Route path='/portfolio' element={<Portfolio />}></Route>
-                      <Route path='/contacts' element={<Contacts />}></Route>
-                  </Route>
+                  <Route path='/about' element={<About />}></Route>
+                  <Route path='/services' element={<Services />}></Route>
+                  <Route path='/team' element={<Team />}></Route>
+                  <Route path='/portfolio' element={<Portfolio />}></Route>
+                  <Route path='/contacts' element={<Contacts />}></Route>
               </Route>
           </Routes>
       </div>

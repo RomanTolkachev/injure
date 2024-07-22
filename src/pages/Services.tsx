@@ -2,7 +2,7 @@ import {FunctionComponent} from "react";
 
 export const Services: FunctionComponent = () => {
     return (
-        <div>
+        <div className="container">
             я услуги
         </div>
     )

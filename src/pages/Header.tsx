@@ -23,7 +23,7 @@ export const Header: FunctionComponent = () => {
                 </nav>
                 <div className='bg-my-white rounded-full h-full flex items-center px-5 gap-3 text-my-main-blue text-xl'>
                     <a href="tel:123-456-7890" className="font-semibold">123-456-7890</a>
-                    <button className="font-bold text-2xl">оставить заявку</button>
+                    <button className="font-bold text-2xl ">оставить заявку</button>
                 </div>
             </div>
         </header>
