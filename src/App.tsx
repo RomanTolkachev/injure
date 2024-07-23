@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React from "react";
 import {Route, Routes} from "react-router-dom";
 import {Layout} from "./pages/Layout";
 import {Hero} from "./pages/Hero";
@@ -7,7 +7,7 @@ import {Services} from "./pages/Services";
 import {Team} from "./pages/Team";
 import {Portfolio} from "./pages/Portfolio";
 import {Contacts} from "./pages/Contacts";
-import {Container} from "./components/Container";
+
 
 function App(): React.JSX.Element {
 
