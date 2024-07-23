@@ -5,13 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36b4ee8f-85ff-4484-9f99-05238c6d8ecb" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/Header/Logo.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Header/NavMenuWide.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/buttons/BurgerButton.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/buttons/ButtonHeroOrder.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/utils/types.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/buttons/ButtonHeder.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/buttons/ButtonHeder.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/buttons/ButtonMain.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/buttons/ButtonToVideo.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Header.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Hero.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +93,7 @@
       <workItem from="1721589451301" duration="7941000" />
       <workItem from="1721664432157" duration="16265000" />
       <workItem from="1721751212149" duration="9548000" />
-      <workItem from="1721761103496" duration="7653000" />
+      <workItem from="1721761103496" duration="14292000" />
     </task>
     <servers />
   </component>

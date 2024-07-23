@@ -1,6 +1,6 @@
 import {FunctionComponent, useEffect, useState} from "react";
 import {images} from "../services/images";
-import {ButtonMain} from "../components/buttons/ButtonMain";
+import {ButtonToVideo} from "../components/buttons/ButtonToVideo";
 
 export const Hero: FunctionComponent = () => {
 
@@ -27,7 +27,7 @@ export const Hero: FunctionComponent = () => {
                         <h1 className="text-hero-main text-white mb-4 uppercase font-black">нам<br/> доверяют<br/> по праву</h1>
                         <p className="text-hero-legend text-white mb-10">Мы - юридическая компания «In Jure», специализирующаяся на правовом сопровождении
                             бизнеса и на оказании помощи физическим лицам во всех регионах России.</p>
-                        <ButtonMain>смотреть видео</ButtonMain>
+                        <ButtonToVideo>смотреть видео</ButtonToVideo>
                     </div>
                 </div>
             </div>
