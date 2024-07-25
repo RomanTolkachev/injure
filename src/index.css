@@ -34,15 +34,14 @@
     .nav {
         @apply relative
     }
-    .active ul *:before {
+    .active > .nav:before {
         @apply scale-x-100 !important
     }
     .nav:hover:before{
         @apply scale-x-[.3]
     }
     .nav:before {
-        @apply scale-x-0 w-full h-px absolute left-0 -bottom-1 bg-white content-[''] origin-top-left transition duration-300
-
+        @apply absolute scale-x-0 w-full h-px  left-0 -bottom-1 bg-white content-[''] origin-top-left transition duration-300
     }
 
 }

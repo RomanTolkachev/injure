@@ -20,10 +20,10 @@ export const Hero: FunctionComponent = () => {
     }
 
     return (
-        <div className="my-gradient overflow-hidden h-[calc(100svh-79px)] w-full">
-            <div className="bg-no-repeat min-h-[700px] h-full bg-[length:auto_100%]" style={backGroundStyle}>
-                <div className="hero-mask h-full w-full realtive opacity-60 md:hidden z-[1]"></div>
-                <div className="container sm:-translate-x-[15%] md:-translate-x-[15%] lg:-translate-x-[20%] top-0 h-full absolute z-[2] flex items-center justify-center">
+        <div className=" my-gradient overflow-hidden h-[calc(100svh-79px)] w-full">
+            <div className="container bg-no-repeat min-h-[700px] w-full h-full bg-[length:auto_100%]" style={backGroundStyle}>
+                <div className="hero-mask h-full w-full absolute opacity-60 md:hidden z-[1]"></div>
+                <div className="max-sm:translate-x-1/2 max-sm:right-1/2 sm:pl-4 md:pl-6 xl:pl-20 top-0 h-full absolute z-[2] flex items-center justify-center">
                     <div className="max-w-[400px] md:max-w-[480px] xl:max-w-[680px] tracking-tight ">
                         <h1 className="pl-4 text-hero-main-small-mobile sm:pl-0 sm:text-hero-main text-white mb-4 uppercase font-black">нам<br/> доверяют<br/> по
                             праву</h1>
