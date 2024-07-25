@@ -11,6 +11,9 @@
         linear-gradient(transparent 0%, #0388ed 100%),
         linear-gradient(0deg, transparent 0%, #054dd7 0%);
     }
+    .hero-mask {
+        background: linear-gradient(90deg, transparent 0%, #0c2c3d 100%) 0 0/200% 100%;
+    }
     .my-footer-gradient {
         background: radial-gradient(at 65% 75%, #054dd7 0%, transparent 88%),
         linear-gradient(270deg, #00c1ff 0%, #326ee2 100%);
@@ -31,7 +34,7 @@
     .nav {
         @apply relative
     }
-    .active *:before {
+    .active ul *:before {
         @apply scale-x-100 !important
     }
     .nav:hover:before{
