@@ -6,7 +6,7 @@ interface IButtonToVideoProps {
 
 export const ButtonToVideo: FunctionComponent<IButtonToVideoProps> = ({children}) => {
     return (
-        <button className="h-20 text-2xl font-bold text-white border-2 rounded-full border-white px-10 bg-my-blue-light hover:my-button-hover">
+        <button className="block h-20 text-2xl font-bold lg:text-white bg-my-white text-my-blue-light lg:border-2 rounded-3xl lg:rounded-full border-white px-10 lg:bg-my-blue-light lg:hover:my-button-hover">
             {children}
         </button>
     )

@@ -5,16 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36b4ee8f-85ff-4484-9f99-05238c6d8ecb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Header/Logo.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Header/NavMenuWide.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/buttons/BurgerButton.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/buttons/ButtonHeroOrder.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/utils/types.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/buttons/ButtonMain.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/buttons/ButtonToVideo.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Logo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Logo.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/buttons/ButtonToVideo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/buttons/ButtonToVideo.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Hero.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,11 +66,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\OSPanel\domains\injure\src\components" />
       <recent name="C:\OSPanel\domains\injure\public\images" />
       <recent name="C:\OSPanel\domains\injure\public\svg" />
       <recent name="C:\OSPanel\domains\injure\src\pages" />
       <recent name="C:\OSPanel\domains\injure\public\fonts" />
-      <recent name="C:\OSPanel\domains\injure\src\services" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -93,11 +93,26 @@
       <workItem from="1721589451301" duration="7941000" />
       <workItem from="1721664432157" duration="16265000" />
       <workItem from="1721751212149" duration="9548000" />
-      <workItem from="1721761103496" duration="14292000" />
+      <workItem from="1721761103496" duration="15117000" />
+      <workItem from="1721820905934" duration="11752000" />
+      <workItem from="1721842509153" duration="4008000" />
+      <workItem from="1721886933822" duration="3182000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/Footer.tsx</url>
+          <line>11</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -1,9 +1,9 @@
 import React, {FunctionComponent} from "react";
 import {IMenuItem} from "../services/utils/types";
-import {NavMenuWide} from "../components/Header/NavMenuWide";
-import {ButtonHeroOrder} from "../components/buttons/ButtonHeroOrder";
-import {Logo} from "../components/Header/Logo";
-import {BurgerButton} from "../components/buttons/BurgerButton";
+import {NavMenuWide} from "./Header/NavMenuWide";
+import {ButtonHeroOrder} from "./buttons/ButtonHeroOrder";
+import {Logo} from "./Header/Logo";
+import {BurgerButton} from "./buttons/BurgerButton";
 
 const menuList: Array<IMenuItem> = [
     {path: "/", text: 'главная'},
@@ -16,7 +16,7 @@ const menuList: Array<IMenuItem> = [
 
 export const Header: FunctionComponent = () => {
     return  (
-        <header className="bg-my-main-blue p-1.5 h-[79px] fixed w-full border-b border-my-gray-medium">
+        <header className="bg-my-main-blue p-1.5 h-[79px] fixed w-full border-b border-my-gray-medium z-10">
             <div className="container flex h-full items-center gap-9 justify-between">
                 <Logo />
                 <NavMenuWide menuList={menuList}/>
