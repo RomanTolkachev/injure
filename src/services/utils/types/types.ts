@@ -1,1 +1,0 @@
-// export type IRootState = ReturnType<typeof store.getState>
