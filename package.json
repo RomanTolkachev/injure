@@ -21,7 +21,7 @@
     "tailwind-scrollbar-hide": "^1.1.7",
     "tailwind-scrollbar-utilities": "^0.2.0",
     "uuid": "^10.0.0",
-    "typescript": "^5.5.2",
+    "typescript": "^5.5.4",
     "web-vitals": "^2.1.4",
     "webpack": "^5.0.0"
   },
@@ -52,6 +52,6 @@
   "devDependencies": {
     "tailwindcss": "^3.4.4",
     "ts-loader": "^9.5.1",
-    "typescript": "^5.5.3"
+    "typescript": "^5.5.4"
   }
 }
