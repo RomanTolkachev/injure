@@ -1,9 +1,9 @@
 import React, {FunctionComponent} from "react";
-import {IMenuItem} from "../services/utils/types";
-import {NavMenuWide} from "./Header/NavMenuWide";
-import {ButtonHeroOrder} from "./buttons/ButtonHeroOrder";
-import {Logo} from "./Header/Logo";
-import {BurgerButton} from "./buttons/BurgerButton";
+import {IMenuItem} from "../../services/utils/types";
+import {NavMenuWide} from "./NavMenuWide";
+import {ButtonHeroOrder} from "../buttons/ButtonHeroOrder";
+import {Logo} from "./Logo";
+import {BurgerButton} from "../buttons/BurgerButton";
 
 const menuList: Array<IMenuItem> = [
     {path: "/", text: 'главная'},

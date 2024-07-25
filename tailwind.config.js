@@ -34,7 +34,7 @@ module.exports = {
         'hero-main': ['clamp(4rem, 0rem + 6.25vw, 5rem)', 'clamp(4.625rem, 0.625rem + 6.25vw, 5.625rem)'], // 64 строка 76 -  высота 80 строка 96
         'hero-main-small-mobile': ['clamp(2.625rem, -1.5rem + 18.333vw, 4rem)'],
         'hero-legend': ['clamp(1rem, 0.747rem + 0.941vw, 1.5rem)', 'clamp(1.25rem, 0.744rem + 1.882vw, 2.25rem)'],
-        'header-nav': ['clamp(0.75rem, -0.25rem + 1.563vw, 1rem)', 'clamp(0.875rem, -0.375rem + 1.953vw, 1.188rem)'], // 12 to 16, 14 to 19
+        'header-nav': ['clamp(0.875rem, 0.375rem + 0.781vw, 1rem)', 'clamp(0.875rem, -0.375rem + 1.953vw, 1.188rem)'], // 12 to 16, 14 to 19
         'header-order': ['clamp(1.188rem, -0.063rem + 1.953vw, 1.5rem)', 'clamp(1.375rem, -0.125rem + 2.344vw, 1.75rem)'],
         'footer-phone': ['clamp(1.375rem, 0.063rem + 2.734vw, 2.25rem)', ]
       }
