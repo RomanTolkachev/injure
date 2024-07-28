@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="36b4ee8f-85ff-4484-9f99-05238c6d8ecb" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Hero.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +99,7 @@
       <workItem from="1721930065378" duration="4009000" />
       <workItem from="1722005278855" duration="1959000" />
       <workItem from="1722007768177" duration="1796000" />
-      <workItem from="1722079935576" duration="13693000" />
+      <workItem from="1722079935576" duration="14557000" />
     </task>
     <servers />
   </component>
