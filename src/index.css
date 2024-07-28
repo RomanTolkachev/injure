@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
+@layer components {
     * {
         @apply scrollbar-thin
     }
@@ -43,7 +43,12 @@
     .nav:before {
         @apply absolute scale-x-0 w-full h-px  left-0 -bottom-1 bg-white content-[''] origin-top-left transition duration-300
     }
-
+    .video-button {
+        @apply rounded-3xl border-white bg-my-white
+    }
+    .video-button-wide {
+        @apply rounded-full border-2 bg-my-blue-light text-white hover:my-button-hover
+    }
 }
 
 @font-face {

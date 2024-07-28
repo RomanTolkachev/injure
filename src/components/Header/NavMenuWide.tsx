@@ -1,21 +1,24 @@
-import React, {FunctionComponent} from "react";
-import {NavLink} from "react-router-dom";
-import {ButtonHeader} from "../buttons/ButtonHeder";
-import {IMenuItem} from "../../services/utils/types";
+import React, { FunctionComponent } from "react";
+import { NavLink } from "react-router-dom";
+import { ButtonHeader } from "../buttons/ButtonHeder";
+import { IMenuItem } from "../../services/utils/types";
 
-
-export const NavMenuWide: FunctionComponent<{menuList: Array<IMenuItem>}> = ({menuList}) => {
-    return (
-        <nav className="shrink grow gap-10 max-w-[600px] hidden lg:block">
-            <ul className="flex gap-6 font-semibold text-my-white capitalize text-header-nav xl:text-lg">
-                {menuList.map(item => {
-                    return (
-                        <li>
-                            <NavLink to={item.path}><ButtonHeader children={item.text}/></NavLink>
-                        </li>
-                    )
-                })}
-            </ul>
-        </nav>
-    )
-}
+export const NavMenuWide: FunctionComponent<{ menuList: Array<IMenuItem> }> = ({
+  menuList,
+}) => {
+  return (
+    <nav className="hidden max-w-[600px] shrink grow gap-10 lg:block">
+      <ul className="flex gap-6 text-header-nav font-semibold capitalize text-my-white xl:text-lg">
+        {menuList.map((item) => {
+          return (
+            <li>
+              <NavLink to={item.path}>
+                <ButtonHeader children={item.text} />
+              </NavLink>
+            </li>
+          );
+        })}
+      </ul>
+    </nav>
+  );
+};
