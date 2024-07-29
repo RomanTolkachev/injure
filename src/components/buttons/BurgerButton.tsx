@@ -1,23 +1,44 @@
-import { FunctionComponent } from "react";
+import {
+  Dispatch,
+  FunctionComponent,
+  MouseEventHandler,
+  SetStateAction,
+  useCallback,
+} from "react";
 
-export const BurgerButton: FunctionComponent = () => {
+interface IBurgerButtonProps {
+  setBurgerOpen: Dispatch<SetStateAction<boolean>>;
+  burgerOpen: boolean;
+}
+
+export const BurgerButton: FunctionComponent<IBurgerButtonProps> = ({
+  setBurgerOpen,
+  burgerOpen,
+}) => {
+  const handleToggleBurger: MouseEventHandler<HTMLButtonElement> =
+    useCallback(() => {
+      return setBurgerOpen(!burgerOpen);
+    }, [burgerOpen, setBurgerOpen]);
   return (
-    <button className="overflow-hidden h-[79px] lg:hidden fixed top-0 right-0 z-[3] p-[10px] w-[79px] text-center">
+    <button
+      className="fixed right-0 top-0 z-[3] h-[79px] w-[79px] overflow-hidden p-[10px] text-center lg:hidden"
+      onClick={handleToggleBurger}
+    >
       <span
-        style={{ transform: "translateX(90px)" }}
-        className="duration-500 w-[42px] h-[2.5px] top-[25px] left-[10px] bg-white absolute"
+        style={burgerOpen ? { opacity: 0 } : undefined}
+        className="absolute left-[10px] top-[25px] h-[2.5px] w-[42px] bg-white duration-500"
       ></span>
       <span
-        style={{ transform: "rotate(45deg)" }}
-        className="duration-500 w-[42px] h-[2.5px] top-[39px] left-[10px] bg-white absolute"
+        style={burgerOpen ? { transform: "rotate(45deg)" } : undefined}
+        className="absolute left-[10px] top-[39px] h-[2.5px] w-[42px] bg-white duration-500"
       ></span>
       <span
-        style={{ transform: "rotate(-45deg)" }}
-        className="duration-500 w-[42px] h-[2.5px] top-[39px] left-[10px] bg-white absolute"
+        style={burgerOpen ? { transform: "rotate(-45deg)" } : undefined}
+        className="absolute left-[10px] top-[39px] h-[2.5px] w-[42px] bg-white duration-500"
       ></span>
       <span
-        style={{ transform: "translateX(-90px)" }}
-        className="duration-500 w-[42px] h-[2.5px] top-[25px] left-[10px] bg-white absolute translate-y-[28px]"
+        style={burgerOpen ? { opacity: 0 } : undefined}
+        className="absolute left-[10px] top-[53px] h-[2.5px] w-[42px] bg-white duration-500"
       ></span>
     </button>
   );

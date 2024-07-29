@@ -1,0 +1,26 @@
+import React, { FunctionComponent } from "react";
+import { AnimatePresence, motion } from "framer-motion";
+
+interface IInterfaceProps {
+  visible?: boolean;
+}
+
+export const Overlay: FunctionComponent<IInterfaceProps> = ({ visible }) => {
+  return (
+    <AnimatePresence>
+      {visible && (
+        <motion.div
+          className="fixed top-0 z-[5] h-svh w-screen bg-black opacity-40"
+          key="modal"
+          initial={{ opacity: 0 }}
+          transition={{ duration: 0.1 }}
+          animate={{ opacity: 0.4 }}
+          exit={{
+            opacity: 0,
+            transition: { duration: 0.5 },
+          }}
+        />
+      )}
+    </AnimatePresence>
+  );
+};

@@ -1,4 +1,11 @@
-import { CSSProperties, FunctionComponent, useEffect, useState } from "react";
+import {
+  CSSProperties,
+  FunctionComponent,
+  ReactElement,
+  ReactNode,
+  useEffect,
+  useState,
+} from "react";
 import { images } from "../services/images";
 import { ButtonToVideo } from "../components/buttons/ButtonToVideo";
 
