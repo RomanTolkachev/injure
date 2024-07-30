@@ -1,24 +1,25 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
 import App from "./App";
-import {configureStore} from "@reduxjs/toolkit";
-import {rootReducer} from "./services/reducers/root-reducer";
-import {Provider} from "react-redux";
-import {BrowserRouter} from "react-router-dom";
+import { configureStore } from "@reduxjs/toolkit";
+import { rootReducer } from "./services/reducers/root-reducer";
+import { Provider } from "react-redux";
+import { BrowserRouter, ScrollRestoration } from "react-router-dom";
 
 const store = configureStore({
-    reducer: rootReducer,
-})
+  reducer: rootReducer,
+});
 
-
-const root:ReactDOM.Root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
+const root: ReactDOM.Root = ReactDOM.createRoot(
+  document.getElementById("root") as HTMLElement,
+);
 root.render(
   // <React.StrictMode>
-    <BrowserRouter>
-        <Provider store={store}>
-            <App />
-        </Provider>
-    </BrowserRouter>
+  <BrowserRouter>
+    <Provider store={store}>
+      <App />
+    </Provider>
+  </BrowserRouter>,
   // </React.StrictMode>
 );

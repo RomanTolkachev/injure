@@ -39,7 +39,12 @@ export const Header: FunctionComponent = () => {
         </ButtonHeroOrder>
         <div>{burgerOpen}</div>
         <BurgerButton burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />
-        <Burger burgerOpen={burgerOpen} />
+        <Burger
+          menuList={menuList}
+          burgerOpen={burgerOpen}
+          setBurgerOpen={setBurgerOpen}
+          className="absolute right-0 top-[85px] w-full rounded-lg bg-my-blue-light"
+        />
         {domReady &&
           createPortal(
             <Overlay visible={burgerOpen} />,
