@@ -17,7 +17,7 @@ export const Overlay: FunctionComponent<IInterfaceProps> = ({ visible }) => {
     <AnimatePresence>
       {visible && (
         <motion.div
-          className="fixed top-0 z-[5] h-svh w-screen bg-black opacity-40"
+          className="fixed top-0 z-[5] h-dvh w-screen bg-black opacity-40"
           key="modal"
           initial={{ opacity: 0 }}
           transition={{ duration: 0.2 }}
