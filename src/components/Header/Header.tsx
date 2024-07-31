@@ -1,9 +1,4 @@
-import React, {
-  FunctionComponent,
-  ReactNode,
-  useEffect,
-  useState,
-} from "react";
+import React, { FunctionComponent, useState } from "react";
 import { IMenuItem } from "../../services/utils/types";
 import { NavMenuWide } from "./NavMenuWide";
 import { ButtonHeroOrder } from "../buttons/ButtonHeroOrder";
@@ -24,10 +19,8 @@ const menuList: Array<IMenuItem> = [
 
 export const Header: FunctionComponent = () => {
   const [burgerOpen, setBurgerOpen] = useState<boolean>(false);
-  const [domReady, setDomReady] = React.useState(false);
-  React.useEffect(() => {
-    setDomReady(true);
-  }, []);
+
+  console.log("рендер Header");
 
   return (
     <header className="fixed z-10 h-[79px] w-full border-b border-my-gray-medium bg-my-main-blue p-1.5 max-sm:px-4">
@@ -45,12 +38,10 @@ export const Header: FunctionComponent = () => {
           setBurgerOpen={setBurgerOpen}
           className="absolute right-0 top-[85px] w-full rounded-lg bg-my-blue-light"
         />
-        {domReady &&
-          burgerOpen &&
-          createPortal(
-            <Overlay visible={burgerOpen} />,
-            document.getElementById("portal") as HTMLElement,
-          )}
+        {createPortal(
+          <Overlay visible={burgerOpen} />,
+          document.getElementById("portal") as HTMLElement,
+        )}
       </div>
     </header>
   );

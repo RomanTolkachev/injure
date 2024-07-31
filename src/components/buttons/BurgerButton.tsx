@@ -6,8 +6,6 @@ import {
   useCallback,
 } from "react";
 
-import { useScrollLock } from "../../services/hooks/useScrollLock";
-
 interface IBurgerButtonProps {
   setBurgerOpen: Dispatch<SetStateAction<boolean>>;
   burgerOpen: boolean;
@@ -17,7 +15,6 @@ export const BurgerButton: FunctionComponent<IBurgerButtonProps> = ({
   setBurgerOpen,
   burgerOpen,
 }) => {
-  const { lockScroll } = useScrollLock();
   const handleToggleBurger: MouseEventHandler<HTMLButtonElement> =
     useCallback(() => {
       return setBurgerOpen(!burgerOpen);

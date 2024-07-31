@@ -8,12 +8,11 @@ interface IInterfaceProps {
 
 export const Overlay: FunctionComponent<IInterfaceProps> = ({ visible }) => {
   const { lockScroll, unlockScroll } = useScrollLock();
+  console.log("рендер Overlay");
+
   useEffect(() => {
-    lockScroll();
-    return () => {
-      unlockScroll();
-    };
-  }, [lockScroll, unlockScroll]);
+    visible ? lockScroll() : unlockScroll();
+  }, [visible, lockScroll, unlockScroll]);
   return (
     <AnimatePresence>
       {visible && (
@@ -21,7 +20,7 @@ export const Overlay: FunctionComponent<IInterfaceProps> = ({ visible }) => {
           className="fixed top-0 z-[5] h-svh w-screen bg-black opacity-40"
           key="modal"
           initial={{ opacity: 0 }}
-          transition={{ duration: 0.1 }}
+          transition={{ duration: 0.2 }}
           animate={{ opacity: 0.4 }}
           exit={{
             opacity: 0,
