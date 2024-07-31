@@ -16,6 +16,10 @@
         height: 100svh
     }
 
+    .add-scroll-bar {
+        overflow-y: scroll;
+    }
+
     .my-gradient {
         background: linear-gradient(95deg, transparent 0%, rgb(0,196,255) 130%),
         linear-gradient(transparent 0%, #0388ed 100%),
