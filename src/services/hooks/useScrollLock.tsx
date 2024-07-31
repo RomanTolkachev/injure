@@ -11,7 +11,7 @@ export const useScrollLock = (): IUseScrollLock => {
   const scrollPosition: React.MutableRefObject<number> = React.useRef(0);
   const lockScroll = React.useCallback(() => {
     scrollPosition.current = window.scrollY;
-    document.documentElement.classList.add("start-scrolling");
+    // document.documentElement.classList.add("start-scrolling");
     document.body.classList.add("stop-scrolling");
     document.body.scroll(0, scrollPosition.current);
   }, []);
@@ -19,7 +19,7 @@ export const useScrollLock = (): IUseScrollLock => {
   const unlockScroll = React.useCallback(() => {
     if (!firstRender.current) {
       document.body.classList.remove("stop-scrolling");
-      document.documentElement.classList.remove("start-scrolling");
+      // document.documentElement.classList.remove("start-scrolling");
       document.documentElement.scroll(0, scrollPosition.current);
     }
   }, []);
