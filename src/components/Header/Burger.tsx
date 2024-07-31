@@ -6,7 +6,7 @@ import React, {
 } from "react";
 import { motion, AnimatePresence, Variants } from "framer-motion";
 import { IMenuItem } from "../../services/utils/types";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 interface IBurgerProps {
   setBurgerOpen: Dispatch<SetStateAction<boolean>>;
@@ -97,9 +97,9 @@ export const Burger: FunctionComponent<IBurgerProps> = ({
                   key={key}
                   className="w-full text-nowrap p-2 text-end text-2xl text-white"
                 >
-                  <NavLink className="block w-full p-4" to={item.path}>
+                  <Link className="block w-full p-4" to={item.path}>
                     {item.text}
-                  </NavLink>
+                  </Link>
                 </motion.li>
               );
             })}

@@ -5,8 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36b4ee8f-85ff-4484-9f99-05238c6d8ecb" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/services/hooks/useScrollLock.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Container.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header/Burger.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Burger.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/buttons/BurgerButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/buttons/BurgerButton.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/utils/Overlay.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/utils/Overlay.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Hero.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +114,7 @@
       <workItem from="1722246301686" duration="8648000" />
       <workItem from="1722284329539" duration="1726000" />
       <workItem from="1722316167035" duration="5868000" />
-      <workItem from="1722351390725" duration="12263000" />
+      <workItem from="1722351390725" duration="16057000" />
     </task>
     <servers />
   </component>

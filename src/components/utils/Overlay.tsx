@@ -1,11 +1,19 @@
-import React, { FunctionComponent } from "react";
+import React, { FunctionComponent, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import { useScrollLock } from "../../services/hooks/useScrollLock";
 
 interface IInterfaceProps {
   visible?: boolean;
 }
 
 export const Overlay: FunctionComponent<IInterfaceProps> = ({ visible }) => {
+  const { lockScroll, unlockScroll } = useScrollLock();
+  useEffect(() => {
+    lockScroll();
+    return () => {
+      unlockScroll();
+    };
+  }, [lockScroll, unlockScroll]);
   return (
     <AnimatePresence>
       {visible && (

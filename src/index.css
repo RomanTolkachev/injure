@@ -6,6 +6,16 @@
     * {
         @apply scrollbar-thin
     }
+    .stop-scrolling {
+        overflow: hidden !important;
+        height: 100% !important;
+    }
+
+    .start-scrolling {
+        overflow-y: scroll !important;
+        height: 100%;
+    }
+
     .my-gradient {
         background: linear-gradient(95deg, transparent 0%, rgb(0,196,255) 130%),
         linear-gradient(transparent 0%, #0388ed 100%),

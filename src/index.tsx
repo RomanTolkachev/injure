@@ -5,7 +5,7 @@ import App from "./App";
 import { configureStore } from "@reduxjs/toolkit";
 import { rootReducer } from "./services/reducers/root-reducer";
 import { Provider } from "react-redux";
-import { BrowserRouter, ScrollRestoration } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 
 const store = configureStore({
   reducer: rootReducer,

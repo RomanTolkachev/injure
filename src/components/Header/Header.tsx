@@ -46,6 +46,7 @@ export const Header: FunctionComponent = () => {
           className="absolute right-0 top-[85px] w-full rounded-lg bg-my-blue-light"
         />
         {domReady &&
+          burgerOpen &&
           createPortal(
             <Overlay visible={burgerOpen} />,
             document.getElementById("portal") as HTMLElement,
