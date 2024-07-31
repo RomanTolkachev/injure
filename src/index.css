@@ -8,12 +8,12 @@
     }
     .stop-scrolling {
         overflow: hidden !important;
-        height: 100% !important;
+        height: 100svh !important;
     }
 
     .start-scrolling {
         overflow-y: scroll !important;
-        height: 100%;
+        height: 100svh
     }
 
     .my-gradient {
