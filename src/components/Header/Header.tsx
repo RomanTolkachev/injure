@@ -29,12 +29,15 @@ export const Header: FunctionComponent = () => {
         </ButtonHeroOrder>
         <div>{burgerOpen}</div>
         <BurgerButton burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />
-        <Burger
-          menuList={menuList}
-          burgerOpen={burgerOpen}
-          setBurgerOpen={setBurgerOpen}
-          className="absolute right-0 top-[85px] w-full rounded-lg bg-my-blue-light"
-        />
+        <div className="max-h-svh">
+          <Burger
+            menuList={menuList}
+            burgerOpen={burgerOpen}
+            setBurgerOpen={setBurgerOpen}
+            className="fixed right-0 top-[85px] w-full rounded-lg bg-my-blue-light"
+          />
+        </div>
+
         {createPortal(
           <Overlay visible={burgerOpen} setBurgerOpen={setBurgerOpen} />,
           document.getElementById("portal") as HTMLElement,

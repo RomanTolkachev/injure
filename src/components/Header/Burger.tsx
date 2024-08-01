@@ -6,7 +6,7 @@ import React, {
 } from "react";
 import { motion, AnimatePresence, Variants } from "framer-motion";
 import { IMenuItem } from "../../services/utils/types";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 interface IBurgerProps {
   setBurgerOpen: Dispatch<SetStateAction<boolean>>;
@@ -31,6 +31,27 @@ const motionVariants: Variants = {
     scaleY: 0,
     transition: {
       duration: 0.1,
+    },
+  },
+};
+
+const listVariants: Variants = {
+  open: {
+    clipPath: "inset(0% 0% 0% 0% round 10px)",
+    transition: {
+      type: "spring",
+      bounce: 0,
+      duration: 0.7,
+      delayChildren: 0.2,
+      staggerChildren: 0.05,
+    },
+  },
+  closed: {
+    clipPath: "inset(10% 50% 90% 50% round 10px)",
+    transition: {
+      type: "spring",
+      bounce: 0,
+      duration: 0.3,
     },
   },
 };
@@ -63,31 +84,12 @@ export const Burger: FunctionComponent<IBurgerProps> = ({
           initial="closed"
           animate="open"
           exit="onClose"
-          className={`${className}`}
+          className={`${className} max-h-svh overflow-y-scroll`}
         >
           <motion.ul
-            variants={{
-              open: {
-                clipPath: "inset(0% 0% 0% 0% round 10px)",
-                transition: {
-                  type: "spring",
-                  bounce: 0,
-                  duration: 0.7,
-                  delayChildren: 0.2,
-                  staggerChildren: 0.05,
-                },
-              },
-              closed: {
-                clipPath: "inset(10% 50% 90% 50% round 10px)",
-                transition: {
-                  type: "spring",
-                  bounce: 0,
-                  duration: 0.3,
-                },
-              },
-            }}
+            variants={listVariants}
             style={{ pointerEvents: "auto" }}
-            className="burger_nav flex w-full flex-col bg-my-blue-light px-6 py-2 [&>li:not(:last-of-type)]:border-b-2 [&>li:not(last-of-type)]:border-b-my-deep-light"
+            className="burger_nav flex h-fit w-full flex-col"
           >
             {menuList.map((item, key) => {
               return (
@@ -95,7 +97,7 @@ export const Burger: FunctionComponent<IBurgerProps> = ({
                   variants={itemVariants}
                   onClick={handleCloseBurger}
                   key={key}
-                  className="w-full text-nowrap p-2 text-end text-2xl text-white"
+                  className="relative w-full text-nowrap p-2 text-end text-2xl text-white before:absolute before:bottom-0 before:left-1/2 before:h-px before:w-[calc(100%-2.5rem)] before:-translate-x-1/2 before:px-6 before:content-[''] active:bg-my-main-blue [&:not(:last-of-type)]:before:bg-white"
                 >
                   <Link className="block w-full p-4" to={item.path}>
                     {item.text}

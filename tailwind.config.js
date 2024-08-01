@@ -39,10 +39,10 @@ module.exports = {
         "hero-main": [
           "clamp(4rem, 0rem + 6.25vw, 5rem)",
           "clamp(4.625rem, 0.625rem + 6.25vw, 5.625rem)",
-        ], // 64 строка 76 -  высота 80 строка 96
+        ], // 64 строка 76 -  высота 84
         "hero-main-small-mobile": [
           "clamp(2.625rem, -1.5rem + 18.333vw, 4rem)",
-          "clamp(1.875rem, -1.222rem + 16.519vw, 5.375rem)",
+          "clamp(3.438rem, 1.875rem + 7.813vw, 5rem)", // высота строки 55-80 320-640px
         ],
         "hero-legend": [
           "clamp(1rem, 0.747rem + 0.941vw, 1.5rem)",
