@@ -97,9 +97,9 @@ export const Burger: FunctionComponent<IBurgerProps> = ({
                   variants={itemVariants}
                   onClick={handleCloseBurger}
                   key={key}
-                  className="relative w-full text-nowrap p-2 text-end text-2xl text-white before:absolute before:bottom-0 before:left-1/2 before:h-px before:w-[calc(100%-2.5rem)] before:-translate-x-1/2 before:px-6 before:content-[''] active:bg-my-main-blue [&:not(:last-of-type)]:before:bg-white"
+                  className="relative w-full text-nowrap p-2 text-end text-lg text-white first-letter:capitalize before:absolute before:bottom-0 before:left-1/2 before:h-px before:w-[calc(100%-2rem)] before:-translate-x-1/2 before:px-6 before:content-[''] active:bg-my-main-blue [&:not(:last-of-type)]:before:bg-white"
                 >
-                  <Link className="block w-full p-4" to={item.path}>
+                  <Link className="block w-full p-2" to={item.path}>
                     {item.text}
                   </Link>
                 </motion.li>

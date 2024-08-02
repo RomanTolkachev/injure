@@ -1,7 +1,7 @@
-import {FunctionComponent} from "react";
+import { FunctionComponent } from "react";
+import { CallUs } from "../components/call-us/CallUs";
+import { team } from "../services/images";
 
 export const Contacts: FunctionComponent = () => {
-    return (
-        <div className="container">я контакты</div>
-    )
-}
+  return <CallUs employee={team.dmitry} />;
+};

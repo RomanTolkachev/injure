@@ -57,6 +57,14 @@ module.exports = {
           "clamp(1.375rem, -0.125rem + 2.344vw, 1.75rem)",
         ],
         "footer-phone": ["clamp(1.375rem, 0.063rem + 2.734vw, 2.25rem)"],
+        "call-us-header": [
+          "clamp(3.375rem, 0.875rem + 3.906vw, 4rem)",
+          "clamp(4rem, 0.75rem + 5.078vw, 4.813rem)",
+        ], // FH:54-64 LH:65-77 SCREEN:1024-1280px
+        "call-us-span": [
+          "clamp(0.813rem, 0.156rem + 1.367vw, 1.25rem)",
+          "clamp(1.063rem, 0.406rem + 1.367vw, 1.5rem)",
+        ], // FH:13-20 LH:17-24 SCREEN:768-1280px
       },
     },
   },
