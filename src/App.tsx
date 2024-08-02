@@ -1,7 +1,7 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import { Layout } from "./components/Layout";
-import { Hero } from "./pages/Hero";
+import { Main } from "./pages/Main";
 import { About } from "./pages/About";
 import { Services } from "./pages/Services";
 import { Team } from "./pages/Team";
@@ -13,7 +13,7 @@ function App(): React.JSX.Element {
     <div className="flex min-h-svh max-w-[100vw] flex-col font-Inter">
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route path="/" element={<Hero />}></Route>
+          <Route path="/" element={<Main />}></Route>
           <Route path="/about" element={<About />}></Route>
           <Route path="/services" element={<Services />}></Route>
           <Route path="/team" element={<Team />}></Route>

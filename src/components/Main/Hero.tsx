@@ -1,5 +1,5 @@
 import { FunctionComponent } from "react";
-import { ButtonToVideo } from "../components/buttons/ButtonToVideo";
+import { ButtonToVideo } from "../buttons/ButtonToVideo";
 
 export const Hero: FunctionComponent = () => {
   return (
