@@ -10,13 +10,9 @@ export const ContentNews: FunctionComponent<IContentNewsProps> = ({
   preview,
 }) => {
   return (
-    <div>
-      <h3 className="mb-4 text-2xl font-semibold text-my-main-blue first-letter:capitalize">
-        {header}
-      </h3>
-      <span className="text-my-deep-light first-letter:capitalize">
-        {preview}
-      </span>
+    <div className="first-letter:capitalize">
+      <h3 className="mb-3 text-xl font-semibold text-my-main-blue">{header}</h3>
+      <span className="text-my-gray-medium">{preview}</span>
     </div>
   );
 };

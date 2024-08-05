@@ -5,7 +5,7 @@ import { INews } from "../../../services/utils/types";
 
 export const NewsItem: FunctionComponent<{ news: INews }> = ({ news }) => {
   return (
-    <article className="flex w-full py-8 [&>*]:basis-1/2">
+    <article className="flex w-full py-6 [&>*]:basis-1/2">
       <Date date={news.date} />
       <ContentNews header={news.header} preview={news.preview} />
     </article>

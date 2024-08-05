@@ -6,7 +6,7 @@ interface IDateHeaderProps {
 
 export const Date: FunctionComponent<IDateHeaderProps> = ({ date }) => {
   return (
-    <span className="text-md font-base font-black tracking-wide text-my-deep-light">
+    <span className="font-base text-sm font-black tracking-wide text-my-deep-light">
       {date
         .toLocaleString("ru", {
           year: "numeric",
