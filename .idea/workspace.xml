@@ -5,19 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36b4ee8f-85ff-4484-9f99-05238c6d8ecb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/call-us/CallUsPhoto.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Main/News/ContentNews.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Main/News/DateHeader.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Main/News/HeaderNews.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Main/News/News.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/utils/news.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Burger.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Burger.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/call-us/CallUs.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/call-us/CallUs.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/About.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/About.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Contacts.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Contacts.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Main.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Services.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Services.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/images.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/images.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/utils/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/utils/types.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +27,7 @@
       <list>
         <option value="tsconfig.json" />
         <option value="package.json" />
+        <option value="JavaScript File" />
         <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
       </list>
@@ -53,23 +49,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/OSPanel/domains/injure/src/components/Main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "C:\\OSPanel\\domains\\injure\\node_modules\\prettier",
-    "settings.editor.selected.configurable": "settings.javascript.prettier",
-    "ts.external.directory.path": "C:\\OSPanel\\domains\\injure\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/OSPanel/domains/injure/src/components/Main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\OSPanel\\domains\\injure\\node_modules\\prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\OSPanel\\domains\\injure\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\OSPanel\domains\injure\src\components\Main" />
@@ -77,11 +73,11 @@
       <recent name="C:\OSPanel\domains\injure\public\webp" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\OSPanel\domains\injure\src\components\Main\News" />
       <recent name="C:\OSPanel\domains\injure\src\components\call-us" />
       <recent name="C:\OSPanel\domains\injure\src\components\Header" />
       <recent name="C:\OSPanel\domains\injure\src\components" />
       <recent name="C:\OSPanel\domains\injure\public\images" />
-      <recent name="C:\OSPanel\domains\injure\public\svg" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -121,6 +117,8 @@
       <workItem from="1722351390725" duration="30776000" />
       <workItem from="1722522955877" duration="15255000" />
       <workItem from="1722589422402" duration="14579000" />
+      <workItem from="1722848869133" duration="15000" />
+      <workItem from="1722878429975" duration="9108000" />
     </task>
     <servers />
   </component>

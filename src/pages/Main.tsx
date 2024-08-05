@@ -2,11 +2,13 @@ import { FunctionComponent } from "react";
 import { Hero } from "../components/Main/Hero";
 import { CallUs } from "../components/call-us/CallUs";
 import { team } from "../services/images";
+import { News } from "../components/Main/News/News";
 
 export const Main: FunctionComponent = () => {
   return (
     <>
       <Hero />
+      <News />
       <CallUs employee={team.artem} />
     </>
   );

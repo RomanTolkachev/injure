@@ -7,6 +7,7 @@ import { BurgerButton } from "../buttons/BurgerButton";
 import { createPortal } from "react-dom";
 import { Burger } from "./Burger";
 import { Overlay } from "../utils/Overlay";
+import { news } from "../../services/utils/news";
 
 const menuList: Array<IMenuItem> = [
   { path: "/", text: "главная" },
@@ -18,6 +19,7 @@ const menuList: Array<IMenuItem> = [
 ];
 
 export const Header: FunctionComponent = () => {
+  console.log(news[0].date);
   const [burgerOpen, setBurgerOpen] = useState<boolean>(false);
   return (
     <header className="fixed z-10 h-[79px] w-full border-b border-my-gray-medium bg-my-main-blue p-1.5 max-sm:px-4">
