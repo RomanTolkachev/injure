@@ -14,3 +14,10 @@ export interface IEmployee {
     legalBody: string;
   };
 }
+
+export interface INews {
+  date: Date;
+  header: string;
+  preview: string;
+  text: string;
+}

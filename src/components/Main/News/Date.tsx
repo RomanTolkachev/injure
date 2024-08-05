@@ -4,7 +4,7 @@ interface IDateHeaderProps {
   date: Date;
 }
 
-export const DateHeader: FunctionComponent<IDateHeaderProps> = ({ date }) => {
+export const Date: FunctionComponent<IDateHeaderProps> = ({ date }) => {
   return (
     <span className="text-md font-base font-black tracking-wide text-my-deep-light">
       {date
