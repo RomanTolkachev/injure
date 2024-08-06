@@ -69,6 +69,14 @@ module.exports = {
           "clamp(0.875rem, 0.764rem + 0.491vw, 1rem)",
           "clamp(1rem, 0.779rem + 0.983vw, 1.25rem)",
         ], // FH 14-16 LH: 16-20 SCREEN: 360-767px
+        "call-us-header-mobile": [
+          "clamp(2.125rem, 0.467rem + 7.368vw, 3rem)",
+          "clamp(2.5rem, 0.487rem + 8.947vw, 3.563rem)",
+        ], //FH:34-48 LH:40-57 SCREEN:360-550
+        "call-us-span-mobile": [
+          "clamp(1rem, 0.526rem + 2.105vw, 1.25rem)",
+          "clamp(1.188rem, 0.595rem + 2.632vw, 1.5rem)",
+        ], //FH:16-20 LH:19-24 SCREEN:360-550
       },
     },
   },

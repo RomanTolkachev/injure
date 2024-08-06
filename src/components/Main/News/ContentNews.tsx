@@ -13,8 +13,8 @@ export const ContentNews: FunctionComponent<IContentNewsProps> = ({
   date,
 }) => {
   return (
-    <div className="first-letter:capitalize">
-      <h3 className="text- font-semibold text-my-main-blue sm:mb-3 sm:text-sm md:text-xl">
+    <div className="first-letter:uppercase">
+      <h3 className="font-semibold text-my-main-blue sm:mb-3 sm:text-sm md:text-xl">
         {header}
       </h3>
       <div className="mb-2 sm:hidden">
