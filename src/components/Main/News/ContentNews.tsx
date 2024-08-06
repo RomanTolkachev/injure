@@ -1,20 +1,26 @@
 import { FunctionComponent } from "react";
+import { Date } from "./Date";
 
 interface IContentNewsProps {
   header: string;
   preview: string;
+  date: Date;
 }
 
 export const ContentNews: FunctionComponent<IContentNewsProps> = ({
   header,
   preview,
+  date,
 }) => {
   return (
-    <div>
-      <h3 className="mb-4 text-2xl font-semibold text-my-main-blue first-letter:capitalize">
+    <div className="first-letter:capitalize">
+      <h3 className="text- font-semibold text-my-main-blue sm:mb-3 sm:text-sm md:text-xl">
         {header}
       </h3>
-      <span className="text-my-deep-light first-letter:capitalize">
+      <div className="mb-2 sm:hidden">
+        <Date date={date} />
+      </div>
+      <span className="text-news-preview text-my-gray-medium sm:text-xs md:text-base">
         {preview}
       </span>
     </div>

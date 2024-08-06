@@ -20,4 +20,5 @@ export interface INews {
   header: string;
   preview: string;
   text: string;
+  id?: string;
 }

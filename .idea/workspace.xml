@@ -5,14 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36b4ee8f-85ff-4484-9f99-05238c6d8ecb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Main/News/NewsItem.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Main/News/DateHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/News/Date.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Main/News/ContentNews.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/News/ContentNews.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Main/News/Date.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/News/Date.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Main/News/HeaderNews.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/News/HeaderNews.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Main/News/News.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/News/News.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/call-us/CallUs.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/call-us/CallUs.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/utils/news.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/utils/news.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Main/News/NewsItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/News/NewsItem.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services/utils/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/utils/types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,6 +121,7 @@
       <workItem from="1722589422402" duration="14579000" />
       <workItem from="1722848869133" duration="15000" />
       <workItem from="1722878429975" duration="12328000" />
+      <workItem from="1722945217280" duration="7618000" />
     </task>
     <servers />
   </component>
