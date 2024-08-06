@@ -20,7 +20,7 @@ export const ContentNews: FunctionComponent<IContentNewsProps> = ({
       <div className="mb-2 sm:hidden">
         <Date date={date} />
       </div>
-      <span className="text-news-preview text-my-gray-medium sm:text-xs md:text-base">
+      <span className="text-news-preview text-my-gray sm:text-base">
         {preview}
       </span>
     </div>

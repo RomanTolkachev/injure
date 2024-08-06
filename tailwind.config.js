@@ -66,9 +66,9 @@ module.exports = {
           "clamp(1.063rem, 0.406rem + 1.367vw, 1.5rem)",
         ], // FH:13-20 LH:17-24 SCREEN:768-1280px
         "news-preview": [
-          "clamp(0.625rem, 0.514rem + 0.491vw, 0.75rem)",
-          "clamp(0.5rem, 0.058rem + 1.966vw, 1rem)",
-        ], // FH 10-12 LH: 8-16 SCREEN: 360-767px
+          "clamp(0.875rem, 0.764rem + 0.491vw, 1rem)",
+          "clamp(1rem, 0.779rem + 0.983vw, 1.25rem)",
+        ], // FH 14-16 LH: 16-20 SCREEN: 360-767px
       },
     },
   },
