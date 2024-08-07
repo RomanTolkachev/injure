@@ -38,11 +38,11 @@ export const CallUs: FunctionComponent<{ employee: IEmployee }> = ({
         <span className="text-call-us-span-mobile mb-5 block text-center font-semibold text-my-deep-gray">
           Оставьте заявку и мы ответим Вам.
         </span>
-        <div className="relative left-1/2 mx-auto aspect-[2] h-[600px] -translate-x-1/2 overflow-hidden">
+        <div className="relative left-1/2 mx-auto aspect-[2] h-[500px] -translate-x-1/2 overflow-hidden">
           <img
             src={employee.photoCallUs}
             alt="lawyer"
-            className="absolute left-1/2 top-0 z-[1] h-full -translate-x-1/2"
+            className="absolute bottom-0 left-1/2 z-[1] h-[85%] -translate-x-1/2"
           />
           <svg
             className="absolute w-full"
@@ -54,8 +54,8 @@ export const CallUs: FunctionComponent<{ employee: IEmployee }> = ({
               ry="70%"
               rx="31%"
               id="svg_1"
-              cy="77%"
-              cx="61%"
+              cy="76%"
+              cx="60%"
               strokeWidth="0"
               stroke="#000"
               fill={employee.colourAccent}
@@ -65,8 +65,8 @@ export const CallUs: FunctionComponent<{ employee: IEmployee }> = ({
               ry="67%"
               rx="31%"
               id="svg_1"
-              cy="81%"
-              cx="65%"
+              cy="80%"
+              cx="64%"
               strokeWidth="0"
               stroke="#000"
               fill={employee.colourMain}
