@@ -2,7 +2,6 @@ import { FunctionComponent } from "react";
 import { InputCustom } from "./InputCustom";
 import { CallUsPhoto } from "./CallUsPhoto";
 import { IEmployee } from "../../services/utils/types";
-import { ButtonToVideo } from "../buttons/ButtonToVideo";
 import { ButtonCallUs } from "../buttons/ButtonCallUs";
 
 export const CallUs: FunctionComponent<{ employee: IEmployee }> = ({
@@ -31,11 +30,11 @@ export const CallUs: FunctionComponent<{ employee: IEmployee }> = ({
           <CallUsPhoto employee={employee} />
         </div>
       </div>
-      <div className="relative mx-auto w-full max-w-[767px] overflow-hidden md:hidden">
-        <h2 className="mx-auto mb-2 w-fit text-call-us-header-mobile font-bold tracking-tight text-[#399DFF]">
+      <div className="relative mx-auto mb-10 w-[390px] overflow-hidden rounded-3xl pt-6 shadow-[0_2px_51px_-12px_rgba(34,60,80,0.26);] md:hidden">
+        <h2 className="mx-auto mb-2 w-fit text-4xl font-bold tracking-tight text-[#399DFF]">
           Остались вопросы?
         </h2>
-        <span className="mb-5 block text-center text-call-us-span-mobile font-semibold text-my-deep-gray">
+        <span className="mb-5 block text-center text-lg font-semibold text-my-deep-gray">
           Оставьте заявку и мы ответим Вам.
         </span>
         <div className="relative left-1/2 mx-auto aspect-[2] h-[500px] -translate-x-1/2 overflow-hidden">
@@ -55,7 +54,7 @@ export const CallUs: FunctionComponent<{ employee: IEmployee }> = ({
               rx="31%"
               id="svg_1"
               cy="76%"
-              cx="60%"
+              cx="62%"
               strokeWidth="0"
               stroke="#000"
               fill={employee.colourAccent}
@@ -66,7 +65,7 @@ export const CallUs: FunctionComponent<{ employee: IEmployee }> = ({
               rx="31%"
               id="svg_1"
               cy="80%"
-              cx="64%"
+              cx="66%"
               strokeWidth="0"
               stroke="#000"
               fill={employee.colourMain}
