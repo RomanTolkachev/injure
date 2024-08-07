@@ -4,19 +4,19 @@ export const images = {
 
 export const team = {
   arina: {
-    photoCallUs: "/webp/call_arina.webp",
+    photoCallUs: "/webp/prettier/arina.webp",
     colourMain: "#CEC1B1",
     colourAccent: "#75675C",
     legend: null,
   },
   artem: {
-    photoCallUs: "/webp/call_artem.webp",
+    photoCallUs: "/webp/prettier/artem.webp",
     colourMain: "#567B99",
     colourAccent: "#1C3749",
     legend: null,
   },
   alexandr: {
-    photoCallUs: "/webp/call_attorney.webp",
+    photoCallUs: "/webp/prettier/alexandr.webp",
     colourMain: "#567B99",
     colourAccent: "#1C3749",
     legend: null,
@@ -27,7 +27,7 @@ export const team = {
     },
   },
   dmitry: {
-    photoCallUs: "/webp/call_lawyer.webp",
+    photoCallUs: "/webp/prettier/dmitry.webp",
     colourMain: "#CBEBFF",
     colourAccent: "#4D8892",
     legend: null,

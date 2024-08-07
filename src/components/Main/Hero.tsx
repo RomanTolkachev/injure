@@ -14,8 +14,8 @@ export const Hero: FunctionComponent = () => {
               <br /> по праву
             </h1>
             <p className="mb-10 px-4 text-hero-legend text-white sm:px-0">
-              Мы - юридическая компания «In Jure», специализирующаяся на
-              правовом сопровождении бизнеса и на оказании помощи физическим
+              Мы - юридическая компания «In Jure» ("Ин Юре"), специализирующаяся
+              на правовом сопровождении бизнеса и на оказании помощи физическим
               лицам во всех регионах России.
             </p>
             <div className="w-fit max-sm:mx-auto max-sm:mt-auto max-sm:w-full">

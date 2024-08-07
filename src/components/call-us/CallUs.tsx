@@ -32,17 +32,17 @@ export const CallUs: FunctionComponent<{ employee: IEmployee }> = ({
         </div>
       </div>
       <div className="relative mx-auto w-full max-w-[767px] overflow-hidden md:hidden">
-        <h2 className="text-call-us-header-mobile mx-auto mb-2 w-fit font-bold tracking-tight text-[#399DFF]">
+        <h2 className="mx-auto mb-2 w-fit text-call-us-header-mobile font-bold tracking-tight text-[#399DFF]">
           Остались вопросы?
         </h2>
-        <span className="text-call-us-span-mobile mb-5 block text-center font-semibold text-my-deep-gray">
+        <span className="mb-5 block text-center text-call-us-span-mobile font-semibold text-my-deep-gray">
           Оставьте заявку и мы ответим Вам.
         </span>
         <div className="relative left-1/2 mx-auto aspect-[2] h-[500px] -translate-x-1/2 overflow-hidden">
           <img
             src={employee.photoCallUs}
             alt="lawyer"
-            className="absolute bottom-0 left-1/2 z-[1] h-[85%] -translate-x-1/2"
+            className="absolute bottom-0 left-1/2 z-[1] h-[90%] -translate-x-1/2"
           />
           <svg
             className="absolute w-full"
