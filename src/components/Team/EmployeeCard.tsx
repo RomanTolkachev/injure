@@ -15,7 +15,9 @@ export const EmployeeCard: FunctionComponent<IEmployeeCard> = ({ person }) => {
           <BGTeam className="absolute" />
           <div className="absolute h-full px-5 py-10 text-my-white">
             <div className="flex h-full flex-col">
-              <h3 className="mb-8 md:text-lg lg:text-2xl">{person.bio}</h3>
+              <h3 className="mb-8 font-bold md:text-lg lg:text-2xl">
+                {person.bio}
+              </h3>
               <span className="shrink grow text-xs lg:text-base">
                 {person.experience}
               </span>
@@ -46,8 +48,10 @@ export const EmployeeCard: FunctionComponent<IEmployeeCard> = ({ person }) => {
           <Sprite bottomEmployeeCard={true} className="absolute" />
           <div className="absolute flex h-full flex-col">
             <div className="px-5 py-8">
-              <h3 className="mb-8 text-xl">{person.bio}</h3>
-              <span className="shrink grow text-xs lg:text-base">
+              <h3 className="mb-5 text-center text-xl font-bold">
+                {person.bio}
+              </h3>
+              <span className="shrink grow text-[0.87rem] lg:text-base">
                 {person.experience}
               </span>
             </div>

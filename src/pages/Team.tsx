@@ -5,7 +5,7 @@ import { IEmployee } from "../services/utils/types";
 
 export const Team: FunctionComponent = () => {
   return (
-    <section className="container w-screen py-16">
+    <section className="container w-screen py-6 md:py-16">
       <ul className="">
         {team.map((person: IEmployee, key) => {
           return (
