@@ -1,10 +1,10 @@
-import React, {FunctionComponent} from "react";
-import {Sprite} from "../sprite";
+import React, { FunctionComponent } from "react";
+import { Sprite } from "../sprite";
 
 export const Logo: FunctionComponent = () => {
-    return (
-        <div className=' flex items-center min-w-[120px]'>
-            <Sprite/>
-        </div>
-    )
-}
+  return (
+    <div className="flex min-w-[120px] items-center">
+      <Sprite logo={true} />
+    </div>
+  );
+};

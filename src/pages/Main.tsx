@@ -1,7 +1,7 @@
 import { FunctionComponent } from "react";
 import { Hero } from "../components/Main/Hero";
 import { CallUs } from "../components/call-us/CallUs";
-import { team } from "../services/images";
+import { team } from "../services/team";
 import { News } from "../components/Main/News/News";
 
 export const Main: FunctionComponent = () => {
@@ -9,7 +9,7 @@ export const Main: FunctionComponent = () => {
     <>
       <Hero />
       <News />
-      <CallUs employee={team.artem} />
+      <CallUs employee={team[0]} />
     </>
   );
 };

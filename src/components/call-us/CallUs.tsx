@@ -30,7 +30,7 @@ export const CallUs: FunctionComponent<{ employee: IEmployee }> = ({
           <CallUsPhoto employee={employee} />
         </div>
       </div>
-      <div className="relative mx-auto mb-10 w-[390px] overflow-hidden rounded-3xl pt-6 shadow-[0_2px_51px_-12px_rgba(34,60,80,0.26);] md:hidden">
+      <div className="relative mx-auto mb-10 w-[390px] overflow-hidden rounded-3xl pt-6 shadow-[0px_12px_51px_-12px_rgba(34,60,80,0.26);] md:hidden">
         <h2 className="mx-auto mb-2 w-fit text-4xl font-bold tracking-tight text-[#399DFF]">
           Остались вопросы?
         </h2>

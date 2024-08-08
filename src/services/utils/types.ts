@@ -5,9 +5,11 @@ export interface IMenuItem {
 
 export interface IEmployee {
   photoCallUs: string;
+  photoTeam: string;
   colourMain: string;
   colourAccent: string;
-  legend: string | null;
+  experience: string;
+  bio: string;
   legal?: {
     number: string;
     from: string;
