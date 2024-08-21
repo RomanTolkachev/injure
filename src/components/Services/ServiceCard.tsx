@@ -54,7 +54,7 @@ export const ServiceCard: FunctionComponent<IServiceCard> = ({
     >
       <div
         className={
-          "absolute z-[7] flex h-full w-full items-center justify-center"
+          "absolute z-[6] flex h-full w-full items-center justify-center"
         }
       >
         <motion.img
@@ -66,12 +66,19 @@ export const ServiceCard: FunctionComponent<IServiceCard> = ({
       </div>
       <motion.div
         animate={isHover ? imageHover : ""}
-        className={"absolute z-[8] h-full w-full bg-[#000D8199] opacity-80"}
+        className={"absolute z-[7] h-full w-full bg-[#000D8199] opacity-80"}
       />
       {/* prettier-ignore */}
-      <h4 className={"absolute p-5 z-[9] h-full w-full text-2xl font-bold text-my-white uppercase"}>
-        <span className={"block w-full"}>{serviceData.title}</span>
-      </h4>
+      <div className={"absolute p-5 z-[8] h-full flex flex-col justify-between"}>
+        <h4 className={" h-full w-full text-2xl font-bold text-my-white uppercase"}>
+          <span className={"block w-full"}>{serviceData.title}</span>
+        </h4>
+        <span
+          className={"block text-my-white first-letter:capitalize underline underline-offset-4"}
+        >
+        подробнее
+      </span>
+      </div>
     </div>
   );
 };
