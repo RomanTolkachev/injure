@@ -5,17 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36b4ee8f-85ff-4484-9f99-05238c6d8ecb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/public/images/service-images/admin.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/service-images/auto.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/service-images/builders.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/service-images/criminal.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/service-images/insurance.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/service-images/land.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/service-images/migration.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/service-images/zpp.webp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Services/ServiceCardsLayout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Services/ServiceCardsLayout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,7 +133,7 @@
       <workItem from="1724178723286" duration="11118000" />
       <workItem from="1724251672141" duration="11431000" />
       <workItem from="1724266464058" duration="594000" />
-      <workItem from="1724267090130" duration="2960000" />
+      <workItem from="1724267090130" duration="4121000" />
     </task>
     <servers />
   </component>
