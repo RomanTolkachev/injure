@@ -5,135 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36b4ee8f-85ff-4484-9f99-05238c6d8ecb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.prettierrc.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/asset-manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/fonts/Inter-VariableFont_slnt,wght.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/fonts/OFL.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/fonts/README.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/fonts/static/Inter-Black.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/fonts/static/Inter-Bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/fonts/static/Inter-ExtraBold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/fonts/static/Inter-ExtraLight.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/fonts/static/Inter-Light.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/fonts/static/Inter-Medium.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/fonts/static/Inter-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/fonts/static/Inter-SemiBold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/fonts/static/Inter-Thin.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/static/media/Inter-VariableFont_slnt,wght.853e01975d2783d9fa29.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/svg/INJURE.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/Inter-VariableFont_slnt,wght.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/OFL.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/README.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/static/Inter-Black.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/static/Inter-Bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/static/Inter-ExtraBold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/static/Inter-ExtraLight.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/static/Inter-Light.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/static/Inter-Medium.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/static/Inter-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/static/Inter-SemiBold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/static/Inter-Thin.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/INJURE-square.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/INJURE.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/service-images/bankruptcy.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/service-images/collection-of-debts.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/service-images/construction.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/service-images/debts-restruсturisation.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/service-images/family.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/service-images/labor.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/service-images/nasledstvo.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/service-images/tender.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/svg/bg_team.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/svg/method-draw-image.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/svg/one more.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/svg/signature.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/webp/call_arina.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/webp/call_artem.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/webp/call_attorney.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/webp/call_lawyer.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/webp/main-no-bg.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/webp/prettier/alexandr.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/webp/prettier/arina.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/webp/prettier/artem.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/webp/prettier/dmitry.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/webp/prettier/team/alexandr_team.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/webp/prettier/team/arina_team.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/webp/prettier/team/artem_team.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/webp/prettier/team/dmitry_team.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/webp/sectionHeader/handShake.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/webp/signature.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/CallUs/CallUs.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/CallUs/CallUsMobile.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/CallUs/CallUsPhoto.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/CallUs/InputCustom.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Contacts/SectionAdressMap/Address.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Contacts/SectionAdressMap/Legal.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Contacts/SectionAdressMap/OpeningHours.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Contacts/SectionAdressMap/SectionAddressMapKhimky.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Contacts/SectionAdressMap/SectionAddressMapMytischi.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Contacts/SectionAdressMap/SmallHeaderAndInfoBrick.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Contacts/SectionAdressMap/SocialMedia.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Contacts/SectionAdressMap/YandexMap.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Footer.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Header/Burger.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Header/Header.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Header/Logo.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Header/NavMenuWide.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Header/SectionDescription.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Layout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Main/Hero.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Main/News/ContentNews.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Main/News/Date.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Main/News/HeaderNews.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Main/News/News.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Main/News/NewsItem.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/SVG/BGTeam.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Services/ServiceCard.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Services/ServiceCardsLayout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Sprite.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Team/EmployeeCard.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/buttons/BurgerButton.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/buttons/ButtonCallUs.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/buttons/ButtonHeder.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/buttons/ButtonHeroOrder.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/buttons/ButtonToVideo.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/utils/AnimatedPageRouting.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/utils/BroadCrumbs.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/utils/ImgCustom.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/utils/Overlay.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/utils/ScrollToTop.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/About.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Contacts.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Main.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Portfolio.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Services.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Team.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/hooks/typedUseSelector.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/hooks/useScrollLock.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/reducers/root-reducer.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/team.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/utils/map-customization.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/utils/news.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/utils/types.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/service-images/admin.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/service-images/auto.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/service-images/builders.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/service-images/criminal.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/service-images/insurance.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/service-images/land.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/service-images/migration.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/service-images/zpp.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Services/ServiceCardsLayout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Services/ServiceCardsLayout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,27 +48,30 @@
   &quot;associatedIndex&quot;: 7
 }</component>
   <component name="ProjectId" id="2jC57u9iBypb215MWZ9305z2l4e" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;&lt;unknown&gt;&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/OSPanel/domains/injure&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\OSPanel\\domains\\injure\\node_modules\\prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\OSPanel\\domains\\injure\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/OSPanel/domains/injure",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "C:\\OSPanel\\domains\\injure\\node_modules\\prettier",
+    "settings.editor.selected.configurable": "settings.javascript.prettier",
+    "ts.external.directory.path": "C:\\OSPanel\\domains\\injure\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\OSPanel\domains\injure\public\webp\sectionHeader" />
@@ -196,11 +81,11 @@
       <recent name="C:\OSPanel\domains\injure\src\components\Main" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\OSPanel\domains\injure\public\images\service-images" />
       <recent name="C:\OSPanel\domains\injure\src" />
       <recent name="C:\OSPanel\domains\injure\src\components\Contacts\SectionAdressMap" />
       <recent name="C:\OSPanel\domains\injure\src\services\utils" />
       <recent name="C:\OSPanel\domains\injure\public\images" />
-      <recent name="C:\OSPanel\domains\injure\public\webp" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -256,7 +141,8 @@
       <workItem from="1724094130480" duration="8880000" />
       <workItem from="1724178723286" duration="11118000" />
       <workItem from="1724251672141" duration="11431000" />
-      <workItem from="1724266464058" duration="463000" />
+      <workItem from="1724266464058" duration="594000" />
+      <workItem from="1724267090130" duration="2960000" />
     </task>
     <servers />
   </component>

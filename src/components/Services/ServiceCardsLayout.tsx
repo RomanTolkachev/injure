@@ -13,10 +13,9 @@ export const ServiceCardsLayout: FunctionComponent = () => {
     >
       {filtered.map((item, key) => {
         return (
-          <ServiceCard
-            serviceData={item}
-            className={`h-full w-full ${item.size}`}
-          />
+          <div className={`h-full w-full ${item.size}`} key={key}>
+            <ServiceCard serviceData={item} className={`h-full w-full`} />
+          </div>
         );
       })}
     </div>
