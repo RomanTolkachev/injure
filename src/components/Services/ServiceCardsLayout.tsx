@@ -28,7 +28,7 @@ export const ServiceCardsLayout: FunctionComponent = () => {
       initial="start"
       animate="end"
       className={
-        "grid-container mx-auto grid max-w-[1024px] grid-flow-dense auto-rows-fr grid-cols-3 gap-4"
+        "sm:grid-container small-grid-container mx-4 grid grid-flow-dense auto-rows-fr grid-cols-1 gap-2 py-4 sm:mx-auto sm:max-w-screen-sm sm:grid-cols-2 sm:gap-4 md:max-w-screen-md lg:max-w-screen-lg lg:grid-cols-3"
       }
     >
       {filtered.map((item, key) => {
@@ -38,7 +38,7 @@ export const ServiceCardsLayout: FunctionComponent = () => {
             className={`h-full w-full ${item.size}`}
             key={key}
           >
-            <ServiceCard serviceData={item} className={`h-full w-full`} />
+            <ServiceCard serviceData={item} className={``} />
           </motion.li>
         );
       })}

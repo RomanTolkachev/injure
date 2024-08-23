@@ -15,7 +15,7 @@ export const SectionDescription: FunctionComponent<ISectionDescription> = ({
 }) => {
   return (
     <div
-      className={`relative mx-auto mb-10 hidden aspect-[5.7] w-full bg-cyan-400 text-my-white md:block ${className}`}
+      className={`bg-cyan-[#1c3749] relative mx-auto mb-10 hidden aspect-[5.7] w-full text-my-white md:block ${className}`}
     >
       <img
         src={BGImage}
