@@ -3,7 +3,9 @@ import { Link, useLocation } from "react-router-dom";
 import { useSelectorTyped as useSelector } from "../../services/hooks/typedUseSelector";
 import { IMenuItem } from "../../services/utils/types";
 
-export const BroadCrumbs: FunctionComponent = () => {
+export const BroadCrumbs: FunctionComponent<{ className?: string }> = ({
+  className,
+}) => {
   const location = useLocation();
   const navList = useSelector((state) => state.app.navList);
 
@@ -17,7 +19,7 @@ export const BroadCrumbs: FunctionComponent = () => {
   const currentLocation = getPath(navList, location.pathname);
 
   return (
-    <div className="first-letter:capitalize">
+    <div className={`first-letter:capitalize ${className}`}>
       <div className="md:mb-5 lg:mb-7 xl:mb-10">
         <Link to={"/"} className="nav">
           главная

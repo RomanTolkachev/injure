@@ -20,10 +20,10 @@ export const SectionDescription: FunctionComponent<ISectionDescription> = ({
       <img
         src={BGImage}
         alt="bg"
-        className="absolute z-[6] h-full w-full object-cover"
+        className="absolute z-[2] h-full w-full object-cover"
       />
-      <div className="absolute z-[7] h-full w-full bg-my-blue-light opacity-30"></div>
-      <div className="absolute z-[8] h-full w-full md:p-5 lg:p-7 xl:p-10">
+      <div className="absolute z-[3] h-full w-full bg-my-blue-light opacity-30"></div>
+      <div className="absolute z-[4] h-full w-full md:p-5 lg:p-7 xl:p-10">
         <BroadCrumbs />
         <h2 className="font-black first-letter:capitalize md:text-3xl lg:text-5xl xl:text-6xl 2xl:text-7xl">
           {header}

@@ -39,7 +39,7 @@ export const EmployeeCard: FunctionComponent<IEmployeeCard> = ({ person }) => {
         </div>
       </div>
 
-      <div className="mx-auto w-[400px] overflow-hidden rounded-2xl shadow-xl md:hidden">
+      <div className="mx-auto w-full min-w-[340px] max-w-[400px] overflow-hidden rounded-2xl shadow-xl sm:w-[400px] md:hidden">
         <div className="aspect-square w-full bg-[#162d2e]">
           <ImgCustom
             src={person.photoTeam}
@@ -49,14 +49,14 @@ export const EmployeeCard: FunctionComponent<IEmployeeCard> = ({ person }) => {
         </div>
         <div className="relative aspect-square w-full text-my-white">
           <Sprite bottomEmployeeCard={true} className="absolute" />
-          <div className="absolute flex h-full flex-col">
+          <div className="absolute flex h-full flex-col overflow-y-auto">
             <div className="px-5 py-8">
               <h3 className="mb-5 text-center text-xl font-bold">
                 {person.bio}
               </h3>
-              <span className="shrink grow text-[0.87rem] lg:text-base">
+              <p className="min-h-fit shrink grow text-[0.87rem] lg:text-base">
                 {person.experience}
-              </span>
+              </p>
             </div>
           </div>
         </div>

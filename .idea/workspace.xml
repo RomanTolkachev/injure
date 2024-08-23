@@ -7,10 +7,8 @@
     <list default="true" id="36b4ee8f-85ff-4484-9f99-05238c6d8ecb" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header/SectionDescription.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/SectionDescription.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Services/ServiceCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Services/ServiceCard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Services/ServiceCardsLayout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Services/ServiceCardsLayout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Team/EmployeeCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Team/EmployeeCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/utils/BroadCrumbs.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/utils/BroadCrumbs.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,7 +137,7 @@
       <workItem from="1724266464058" duration="594000" />
       <workItem from="1724267090130" duration="7648000" />
       <workItem from="1724303463338" duration="2856000" />
-      <workItem from="1724420869709" duration="12673000" />
+      <workItem from="1724420869709" duration="16215000" />
     </task>
     <servers />
   </component>
