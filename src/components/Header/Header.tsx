@@ -20,7 +20,11 @@ export const Header: FunctionComponent = () => {
           оставить заявку
         </ButtonHeroOrder>
         <div>{burgerOpen}</div>
-        <BurgerButton burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />
+        <BurgerButton
+          burgerOpen={burgerOpen}
+          onClickHandler={() => setBurgerOpen(!burgerOpen)}
+          className={"fixed right-0 top-0 z-[3] h-[79px] w-[79px] lg:hidden"}
+        />
         <div className="max-h-svh">
           <Burger
             menuList={menuList}

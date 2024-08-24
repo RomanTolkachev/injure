@@ -1,28 +1,20 @@
-import {
-  Dispatch,
-  FunctionComponent,
-  MouseEventHandler,
-  SetStateAction,
-  useCallback,
-} from "react";
+import { FunctionComponent } from "react";
 
 interface IBurgerButtonProps {
-  setBurgerOpen?: Dispatch<SetStateAction<boolean>>;
+  onClickHandler?: any;
   burgerOpen: boolean;
+  className?: string;
 }
 
 export const BurgerButton: FunctionComponent<IBurgerButtonProps> = ({
-  setBurgerOpen,
+  onClickHandler,
   burgerOpen,
+  className,
 }) => {
-  const handleToggleBurger: MouseEventHandler<HTMLButtonElement> =
-    useCallback(() => {
-      return setBurgerOpen!(!burgerOpen);
-    }, [burgerOpen, setBurgerOpen]);
   return (
     <button
-      className="fixed right-0 top-0 z-[3] h-[79px] w-[79px] overflow-hidden p-[10px] text-center lg:hidden"
-      onClick={handleToggleBurger}
+      className={`${className} overflow-hidden p-[10px] text-center`}
+      onClick={onClickHandler}
     >
       <span
         style={burgerOpen ? { opacity: 0 } : undefined}
