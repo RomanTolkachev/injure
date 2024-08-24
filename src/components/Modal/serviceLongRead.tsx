@@ -12,12 +12,12 @@ export const ServiceLongRead: FunctionComponent = () => {
       <div className="h-fit overflow-hidden">
         <h4
           className={
-            "mb-8 w-full bg-my-deep-light text-center text-3xl font-bold"
+            "mb-4 w-full bg-my-deep-light text-center text-xl font-bold sm:mb-8 sm:text-3xl"
           }
         >
           {article[0].title}
         </h4>
-        <div className={"mb-8 aspect-[2.5] w-full"}>
+        <div className={"mb-4 aspect-[2.5] w-full sm:mb-8"}>
           <ImgCustom
             src={article[0].image}
             className={"h-full w-full object-cover"}
