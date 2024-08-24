@@ -80,13 +80,15 @@ const Modal: React.FunctionComponent<IModalProps> = ({
           </div>
           <div
             className={
-              "absolute right-[-12px] top-[-12px] sm:right-[0px] sm:top-[0px]"
+              "absolute right-[-12px] top-[-17px] sm:right-[0px] sm:top-[0px]"
             }
             onClick={closeModal}
           >
             <BurgerButton
               burgerOpen={true}
-              className={"flex h-[70px] w-[70px] [&_span]:bg-black"}
+              className={
+                "[&_button]:scale-0.8 flex h-[70px] w-[70px] transform [&_span]:transform [&_span]:bg-black"
+              }
             />
           </div>
         </div>
