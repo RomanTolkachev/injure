@@ -45,7 +45,7 @@ export const ServiceCardsLayout: FunctionComponent = () => {
             className={`h-full w-full ${item.size}`}
             key={key}
           >
-            <Link to={`${key}`} state={{ background: location }}>
+            <Link to={`${item.id}`} state={{ background: location }}>
               <ServiceCard serviceData={item} className={``} />
             </Link>
           </motion.li>

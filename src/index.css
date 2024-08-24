@@ -103,3 +103,9 @@
     font-style: normal;
     src: url("/public/fonts/Inter-VariableFont_slnt,wght.ttf") format('truetype');
 }
+
+@font-face {
+    font-family: "Georgia";
+    font-style: normal;
+    src: url("/public/fonts/georgia.ttf") format('truetype');
+}

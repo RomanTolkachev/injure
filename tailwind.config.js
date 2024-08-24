@@ -4,6 +4,7 @@ module.exports = {
   theme: {
     fontFamily: {
       Inter: ["inter", "sans-serif"],
+      Georgia: ["georgia", "serif"],
     },
     container: {
       center: true,

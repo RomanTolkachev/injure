@@ -5,11 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36b4ee8f-85ff-4484-9f99-05238c6d8ecb" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/public/fonts/georgia.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Modal/serviceLongRead.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Modal/Modal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Modal/Modal.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/buttons/BurgerButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/buttons/BurgerButton.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Services/ServiceCardsLayout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Services/ServiceCardsLayout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Services.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Services.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,11 +80,11 @@
       <recent name="C:\OSPanel\domains\injure\src\components\Main" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\OSPanel\domains\injure\public\fonts" />
       <recent name="C:\OSPanel\domains\injure\public\images\service-images" />
       <recent name="C:\OSPanel\domains\injure\src" />
       <recent name="C:\OSPanel\domains\injure\src\components\Contacts\SectionAdressMap" />
       <recent name="C:\OSPanel\domains\injure\src\services\utils" />
-      <recent name="C:\OSPanel\domains\injure\public\images" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -139,7 +144,7 @@
       <workItem from="1724267090130" duration="7648000" />
       <workItem from="1724303463338" duration="2856000" />
       <workItem from="1724420869709" duration="18041000" />
-      <workItem from="1724476382492" duration="14553000" />
+      <workItem from="1724476382492" duration="33178000" />
     </task>
     <servers />
   </component>

@@ -11,13 +11,13 @@ import { AnimatedPageRouting } from "./components/utils/AnimatedPageRouting";
 import { Header } from "./components/Header/Header";
 import { Footer } from "./components/Footer";
 import Modal from "./components/Modal/Modal";
+import { ServiceLongRead } from "./components/Modal/serviceLongRead";
 
 function App(): React.JSX.Element {
   const location = useLocation();
   const navigate = useNavigate();
   const background: string = location.state && location.state.background;
   const isDynamicRoute = location.pathname.startsWith("/services/");
-  console.log(location);
 
   const memoizedLocation = useMemo(() => {
     if (isDynamicRoute) {
@@ -70,9 +70,9 @@ function App(): React.JSX.Element {
         {background && (
           <Routes location={location} key={location.pathname}>
             <Route
-              path={"services/:id"}
+              path={"services/:serviceId"}
               element={
-                <Modal closeModal={closeModal} children={<div>blabla</div>} />
+                <Modal closeModal={closeModal} children={<ServiceLongRead />} />
               }
             />
           </Routes>
