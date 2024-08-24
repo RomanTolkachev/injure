@@ -79,7 +79,9 @@ const Modal: React.FunctionComponent<IModalProps> = ({
             {children}
           </div>
           <div
-            className={"absolute right-[0px] top-[0px]"}
+            className={
+              "absolute right-[-12px] top-[-12px] sm:right-[0px] sm:top-[0px]"
+            }
             onClick={closeModal}
           >
             <BurgerButton

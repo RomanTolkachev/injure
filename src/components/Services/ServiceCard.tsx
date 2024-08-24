@@ -68,7 +68,7 @@ export const ServiceCard: FunctionComponent<IServiceCard> = ({
         className={"absolute z-[3] h-full w-full bg-[#000D8199]"}
       />
       {/* prettier-ignore */}
-      <div className={"hidden absolute p-5 z-[4] h-full md:flex flex-col justify-between"}>
+      <div className={"hidden absolute p-5 z-[4] h-full sm:flex flex-col justify-between"}>
         <h4 className={" h-full w-full text-2xl font-bold text-my-white uppercase"}>
           <span className={"block w-full"}>{serviceData.title}</span>
         </h4>
@@ -78,7 +78,7 @@ export const ServiceCard: FunctionComponent<IServiceCard> = ({
         подробнее
         </span>
       </div>
-      <div className="absolute z-[4] flex h-full w-full items-center justify-between p-5 text-my-white md:hidden">
+      <div className="absolute z-[4] flex h-full w-full items-center justify-between p-5 text-my-white sm:hidden">
         <h4 className="flex h-full w-full items-center align-middle text-xl font-bold uppercase">
           {serviceData.title}
         </h4>
