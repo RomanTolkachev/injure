@@ -71,7 +71,7 @@ const Modal: React.FunctionComponent<IModalProps> = ({
       >
         <div
           className={
-            "relative z-[12] my-auto h-full max-h-full w-full overflow-hidden rounded-3xl bg-my-deep-light px-8 py-8 pt-20 sm:h-fit md:w-[700px]"
+            "relative z-[12] my-auto h-full max-h-full w-full overflow-hidden rounded-3xl bg-my-deep-light py-8 pt-20 sm:h-fit md:w-[700px]"
           }
           ref={innerRef}
         >
