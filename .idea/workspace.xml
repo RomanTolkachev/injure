@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36b4ee8f-85ff-4484-9f99-05238c6d8ecb" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/Modal/Modal.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/SectionDescription.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/SectionDescription.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Team/EmployeeCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Team/EmployeeCard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/utils/BroadCrumbs.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/utils/BroadCrumbs.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Services/ServiceCardsLayout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Services/ServiceCardsLayout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/buttons/BurgerButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/buttons/BurgerButton.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +138,8 @@
       <workItem from="1724266464058" duration="594000" />
       <workItem from="1724267090130" duration="7648000" />
       <workItem from="1724303463338" duration="2856000" />
-      <workItem from="1724420869709" duration="16215000" />
+      <workItem from="1724420869709" duration="18041000" />
+      <workItem from="1724476382492" duration="7497000" />
     </task>
     <servers />
   </component>

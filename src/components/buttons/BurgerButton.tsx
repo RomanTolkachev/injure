@@ -7,7 +7,7 @@ import {
 } from "react";
 
 interface IBurgerButtonProps {
-  setBurgerOpen: Dispatch<SetStateAction<boolean>>;
+  setBurgerOpen?: Dispatch<SetStateAction<boolean>>;
   burgerOpen: boolean;
 }
 
@@ -17,7 +17,7 @@ export const BurgerButton: FunctionComponent<IBurgerButtonProps> = ({
 }) => {
   const handleToggleBurger: MouseEventHandler<HTMLButtonElement> =
     useCallback(() => {
-      return setBurgerOpen(!burgerOpen);
+      return setBurgerOpen!(!burgerOpen);
     }, [burgerOpen, setBurgerOpen]);
   return (
     <button

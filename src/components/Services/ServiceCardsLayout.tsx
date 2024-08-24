@@ -1,7 +1,8 @@
-import { FunctionComponent } from "react";
+import React, { FunctionComponent } from "react";
 import { ServiceCard } from "./ServiceCard";
 import { services } from "../../services";
 import { motion } from "framer-motion";
+import { Link, useLocation } from "react-router-dom";
 
 const parentVariants = {
   start: {},
@@ -20,6 +21,11 @@ const listVariants = {
 };
 
 export const ServiceCardsLayout: FunctionComponent = () => {
+  const handleClick = (e: React.MouseEvent<HTMLLIElement>) => {
+    e.preventDefault();
+    console.log(location.state);
+  };
+  const location = useLocation();
   const filtered = services.filter((item) => item.type === "physical");
 
   return (
@@ -34,11 +40,14 @@ export const ServiceCardsLayout: FunctionComponent = () => {
       {filtered.map((item, key) => {
         return (
           <motion.li
+            onClick={(e) => handleClick(e)}
             variants={listVariants}
             className={`h-full w-full ${item.size}`}
             key={key}
           >
-            <ServiceCard serviceData={item} className={``} />
+            <Link to={`${key}`} state={{ background: location }}>
+              <ServiceCard serviceData={item} className={``} />
+            </Link>
           </motion.li>
         );
       })}
