@@ -4,6 +4,7 @@ import { BurgerButton } from "../buttons/BurgerButton";
 import { useScrollLock } from "../../services/hooks/useScrollLock";
 import { motion } from "framer-motion";
 import { useLocation } from "react-router-dom";
+import { Sprite } from "../Sprite";
 
 interface IModalProps {
   closeModal: () => void;
@@ -76,20 +77,16 @@ const Modal: React.FunctionComponent<IModalProps> = ({
           ref={innerRef}
         >
           <div className="h-fit max-h-[calc(100vh-7rem)] overflow-y-auto">
+            {/*TODO: тут сделать чтобы низ чайлда был под маской, типа уходит*/}
             {children}
           </div>
           <div
             className={
-              "absolute right-[-12px] top-[-17px] sm:right-[0px] sm:top-[0px]"
+              "absolute right-[-10px] top-[-12px] h-[70px] p-3 text-my-deep-gray hover:cursor-pointer sm:right-[7px] sm:top-[7px]"
             }
             onClick={closeModal}
           >
-            <BurgerButton
-              burgerOpen={true}
-              className={
-                "[&_button]:scale-0.8 flex h-[70px] w-[70px] transform [&_span]:transform [&_span]:bg-black"
-              }
-            />
+            <Sprite close={true} />
           </div>
         </div>
       </motion.section>

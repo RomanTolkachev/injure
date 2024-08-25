@@ -8,6 +8,7 @@ interface ISprite {
   telegram?: boolean;
   whatsUp?: boolean;
   arrow?: boolean;
+  close?: boolean;
 }
 
 export const Sprite: FunctionComponent<ISprite> = ({
@@ -18,6 +19,7 @@ export const Sprite: FunctionComponent<ISprite> = ({
   telegram = false,
   whatsUp = false,
   arrow = false,
+  close = false,
 }) => {
   if (
     !logo &&
@@ -25,7 +27,8 @@ export const Sprite: FunctionComponent<ISprite> = ({
     !bottomEmployeeCard &&
     !telegram &&
     !whatsUp &&
-    !arrow
+    !arrow &&
+    !close
   ) {
     return null;
   }
@@ -220,6 +223,20 @@ export const Sprite: FunctionComponent<ISprite> = ({
             // fillRule="evenodd"
             // clipRule="evenodd"
             d="M12.7071 14.7071C12.3166 15.0976 11.6834 15.0976 11.2929 14.7071L6.29289 9.70711C5.90237 9.31658 5.90237 8.68342 6.29289 8.29289C6.68342 7.90237 7.31658 7.90237 7.70711 8.29289L12 12.5858L16.2929 8.29289C16.6834 7.90237 17.3166 7.90237 17.7071 8.29289C18.0976 8.68342 18.0976 9.31658 17.7071 9.70711L12.7071 14.7071Z"
+            fill="currentColor"
+          />
+        </svg>
+      )}
+      {close && (
+        <svg
+          width="100%"
+          height="100%"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M6.99486 7.00636C6.60433 7.39689 6.60433 8.03005 6.99486 8.42058L10.58 12.0057L6.99486 15.5909C6.60433 15.9814 6.60433 16.6146 6.99486 17.0051C7.38538 17.3956 8.01855 17.3956 8.40907 17.0051L11.9942 13.4199L15.5794 17.0051C15.9699 17.3956 16.6031 17.3956 16.9936 17.0051C17.3841 16.6146 17.3841 15.9814 16.9936 15.5909L13.4084 12.0057L16.9936 8.42059C17.3841 8.03007 17.3841 7.3969 16.9936 7.00638C16.603 6.61585 15.9699 6.61585 15.5794 7.00638L11.9942 10.5915L8.40907 7.00636C8.01855 6.61584 7.38538 6.61584 6.99486 7.00636Z"
             fill="currentColor"
           />
         </svg>

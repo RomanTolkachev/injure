@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36b4ee8f-85ff-4484-9f99-05238c6d8ecb" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Modal/Modal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Modal/Modal.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Modal/serviceLongRead.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Modal/serviceLongRead.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sprite.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sprite.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,7 +138,8 @@
       <workItem from="1724267090130" duration="7648000" />
       <workItem from="1724303463338" duration="2856000" />
       <workItem from="1724420869709" duration="18041000" />
-      <workItem from="1724476382492" duration="36758000" />
+      <workItem from="1724476382492" duration="37523000" />
+      <workItem from="1724567544047" duration="1556000" />
     </task>
     <servers />
   </component>

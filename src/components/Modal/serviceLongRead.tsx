@@ -29,7 +29,7 @@ export const ServiceLongRead: FunctionComponent = () => {
         <div
           // prettier-ignore
           className="font-Georgia
-          h-fit
+          h-fit pb-20
           [&>h5]:text-center [&>h5]:font-semibold [&>h5]:first-letter:capitalize
           [&>p]:indent-8 [&>p]:mb-2
           [&_ul]:list-inside [&_ul]:list-disc [&_ul]:indent-4
