@@ -19,6 +19,18 @@
         mask: linear-gradient(#ffffff 67%, transparent 100%) 0 0/100% 106%;
     }
 
+    .top-mask-dark {
+        background: radial-gradient(circle at 50% -200%, #514242 55%, transparent 68%);;
+    }
+
+    .bot-top-mask-dark {
+        background: radial-gradient(circle at 50% -200%, #514242 55%, transparent 68%), radial-gradient(circle at 50% 300%, #514242 55%, transparent 68%);
+    }
+
+    .bottom-mask-dark {
+        background: radial-gradient(circle at 50% 300%, #514242 55%, transparent 68%);
+    }
+
 
     .my-gradient {
         background: linear-gradient(95deg, transparent 0%, rgb(0,196,255) 130%),

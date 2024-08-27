@@ -1,6 +1,5 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
-import { BurgerButton } from "../buttons/BurgerButton";
 import { useScrollLock } from "../../services/hooks/useScrollLock";
 import { motion } from "framer-motion";
 import { useLocation } from "react-router-dom";
@@ -76,7 +75,7 @@ const Modal: React.FunctionComponent<IModalProps> = ({
           }
           ref={innerRef}
         >
-          <div className="h-fit max-h-[calc(100vh-7rem)] overflow-y-auto">
+          <div className={`h-fit max-h-[calc(100vh-7rem)] overflow-y-auto`}>
             {/*TODO: тут сделать чтобы низ чайлда был под маской, типа уходит*/}
             {children}
           </div>
