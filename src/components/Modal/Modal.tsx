@@ -78,6 +78,13 @@ const Modal: React.FunctionComponent<IModalProps> = ({
     }
   }, []);
   useMotionValueEvent(scrollYProgress, "change", (latest) => {
+    if (
+      containerRef.current!.clientHeight >=
+      containerRef.current!.children[0].clientHeight
+    ) {
+      return;
+    }
+    console.log("сработал юз моушен вэлью");
     handleShadow(containerRef, latest);
   });
 
@@ -120,13 +127,13 @@ const Modal: React.FunctionComponent<IModalProps> = ({
       >
         <div
           className={
-            "relative z-[12] my-auto mb-4 h-full max-h-full w-full overflow-hidden rounded-3xl bg-my-deep-light pt-10 sm:h-fit sm:pb-8 sm:pt-20 md:w-[700px]"
+            "relative z-[12] my-auto h-full max-h-full w-full overflow-hidden rounded-3xl bg-my-deep-light py-10 sm:h-fit sm:pb-10 sm:pt-20 md:w-[700px]"
           }
           ref={innerRef}
         >
           <div
             ref={containerRef}
-            className={`h-fit max-h-[calc(100svh-12svh)] overflow-y-auto`}
+            className={`h-fit max-h-[calc(100svh-5rem)] overflow-y-auto sm:max-h-[calc(100svh-7.5rem)]`}
           >
             {children}
           </div>
