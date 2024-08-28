@@ -22,7 +22,7 @@ export const ServiceLongRead: FunctionComponent = () => {
     const handleScroll = (e: Event) => {
       const target = e.target as HTMLElement;
       const containerHeight = target.clientHeight;
-      const scrolled: number = target.scrollTop;
+      const scrolled: number = Math.round(target.scrollTop);
       const childrenHeight: number = target.children[0].clientHeight;
       console.log(scrolled);
       switch (scrolled) {
