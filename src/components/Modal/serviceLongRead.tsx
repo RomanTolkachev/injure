@@ -1,35 +1,43 @@
-import React, { FunctionComponent, ReactNode, useEffect, useRef } from "react";
+import React, { FunctionComponent, useEffect, useRef, useState } from "react";
 import { Params, useParams } from "react-router-dom";
 import { services } from "../../services";
 import { ImgCustom } from "../utils/ImgCustom";
 
 export const ServiceLongRead: FunctionComponent = () => {
   const scrollableRef = useRef<HTMLDivElement>(null);
+  const [heightOfBlock, setHeightOfBlock] = useState<number>(0);
+  const [heightOfContainer, setHeightOfContainer] = useState<number>(0);
+  const [scrollTop, setScrollTop] = useState<number>(0);
+  useEffect(() => {
+    const handle = () => {
+      setHeightOfBlock(scrollableRef!.current!.clientHeight);
+      setHeightOfContainer(scrollableRef!.current!.parentElement!.clientHeight);
+      setScrollTop(scrollableRef!.current!.parentElement!.scrollTop);
+    };
+    scrollableRef.current!.parentElement!.addEventListener("scroll", handle);
+  }, []);
   useEffect(() => {
     const parent: HTMLElement = scrollableRef.current!.parentElement!;
 
     const handleScroll = (e: Event) => {
       const target = e.target as HTMLElement;
-      const targetHeight = target.clientHeight;
-      const targetScrollHeight: number = target.scrollHeight;
-      const scrollPosition: number =
-        targetScrollHeight - (target.scrollTop + targetHeight);
-      switch (scrollPosition) {
-        case targetScrollHeight - targetHeight: {
+      const containerHeight = target.clientHeight;
+      const scrolled: number = target.scrollTop;
+      const childrenHeight: number = target.children[0].clientHeight;
+      console.log(scrolled);
+      switch (scrolled) {
+        case 0: {
           target.classList.remove("top-mask-dark", "bot-top-mask-dark");
           target.classList.add("bottom-mask-dark");
           break;
         }
-        case 0: {
+        case childrenHeight - containerHeight: {
           target.classList.add("top-mask-dark");
           target.classList.remove("bottom-mask-dark", "bot-top-mask-dark");
           break;
         }
         default: {
-          if (
-            scrollPosition > 0 &&
-            scrollPosition < targetScrollHeight - targetHeight
-          ) {
+          if (scrolled > 0 && scrolled < childrenHeight - containerHeight) {
             target.classList.remove("top-mask-dark", "bottom-mask-dark");
             target.classList.add("bot-top-mask-dark");
           }
@@ -71,6 +79,8 @@ export const ServiceLongRead: FunctionComponent = () => {
             className={"absolute top-0 h-full w-full bg-[#000D8199] opacity-60"}
           ></div>
         </div>
+        <div>{`высота контейнера:${heightOfContainer}, высота блока:${heightOfBlock} проскроллили:${scrollTop}`}</div>
+
         <div
           // prettier-ignore
           className="font-Georgia
