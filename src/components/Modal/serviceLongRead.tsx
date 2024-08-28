@@ -1,4 +1,4 @@
-import React, { FunctionComponent, useEffect, useRef } from "react";
+import React, { FunctionComponent, ReactNode, useEffect, useRef } from "react";
 import { Params, useParams } from "react-router-dom";
 import { services } from "../../services";
 import { ImgCustom } from "../utils/ImgCustom";
@@ -6,16 +6,10 @@ import { ImgCustom } from "../utils/ImgCustom";
 export const ServiceLongRead: FunctionComponent = () => {
   const scrollableRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
-    console.log(
-      `реф: ${scrollableRef.current!.clientHeight}, парент: ${scrollableRef.current!.parentElement!.clientHeight}`,
-    );
-    if (
-      scrollableRef.current!.clientHeight -
-        scrollableRef.current!.parentElement!.clientHeight >
-      0
-    ) {
-      scrollableRef.current!.parentElement!.classList.add("bottom-mask-dark");
-      scrollableRef.current!.parentElement!.addEventListener("scroll", (e) => {
+    const parent: HTMLElement = scrollableRef.current!.parentElement!;
+    if (scrollableRef.current!.clientHeight - parent.clientHeight > 0) {
+      parent.classList.add("bottom-mask-dark");
+      parent.addEventListener("scroll", (e) => {
         handleScroll(e);
       });
     }
@@ -47,6 +41,11 @@ export const ServiceLongRead: FunctionComponent = () => {
             target.classList.add("bot-top-mask-dark");
           }
         }
+      }
+    };
+    return () => {
+      if (scrollableRef) {
+        parent.removeEventListener("scroll", handleScroll);
       }
     };
   }, []);
