@@ -41,8 +41,6 @@ export const ServiceLongRead: FunctionComponent = () => {
       parent.addEventListener("scroll", (e) => {
         handleScroll(e);
       });
-      parent.addEventListener("touchmove", handleScroll); // Добавляем обработчик для touchmove
-      parent.addEventListener("touchend", handleScroll); // Добавляем обработчик для touchend
     }
 
     return () => {
