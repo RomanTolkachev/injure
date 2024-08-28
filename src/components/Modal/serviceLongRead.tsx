@@ -5,6 +5,7 @@ import { ImgCustom } from "../utils/ImgCustom";
 
 export const ServiceLongRead: FunctionComponent = () => {
   const scrollableRef = useRef<HTMLDivElement>(null);
+
   const [heightOfBlock, setHeightOfBlock] = useState<number>(0);
   const [heightOfContainer, setHeightOfContainer] = useState<number>(0);
   const [scrollTop, setScrollTop] = useState<number>(0);

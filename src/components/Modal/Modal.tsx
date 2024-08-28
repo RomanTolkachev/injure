@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect } from "react";
 import { createPortal } from "react-dom";
 import { useScrollLock } from "../../services/hooks/useScrollLock";
 import { motion } from "framer-motion";
@@ -75,7 +75,7 @@ const Modal: React.FunctionComponent<IModalProps> = ({
           }
           ref={innerRef}
         >
-          <div className={`h-fit max-h-[calc(100dvh-5.5rem)] overflow-y-auto`}>
+          <div className={`h-fit max-h-[calc(100svh-6.5rem)] overflow-y-auto`}>
             {/*TODO: тут сделать чтобы низ чайлда был под маской, типа уходит*/}
             {children}
           </div>
