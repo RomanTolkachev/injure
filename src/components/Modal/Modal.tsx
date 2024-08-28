@@ -1,7 +1,7 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import { createPortal } from "react-dom";
 import { useScrollLock } from "../../services/hooks/useScrollLock";
-import { motion } from "framer-motion";
+import { motion, useMotionValueEvent, useScroll } from "framer-motion";
 import { useLocation } from "react-router-dom";
 import { Sprite } from "../Sprite";
 
@@ -10,15 +10,81 @@ interface IModalProps {
   children: React.ReactNode;
 }
 
+const modalVariants = {
+  start: {
+    opacity: 0,
+  },
+  appearing: {
+    opacity: 1,
+  },
+  exit: {
+    opacity: 0,
+  },
+};
+
+const handleShadow = (
+  element: React.RefObject<HTMLElement>,
+  scrollPosition: number,
+) => {
+  const el = element.current!;
+  switch (scrollPosition) {
+    case 0: {
+      console.log("скролл вначале");
+      el.classList.remove("top-mask-dark", "bot-top-mask-dark");
+      el.classList.add("bottom-mask-dark");
+      break;
+    }
+    case 1: {
+      console.log("домотали до конца");
+      el.classList.add("top-mask-dark");
+      el.classList.remove("bottom-mask-dark", "bot-top-mask-dark");
+      break;
+    }
+    default: {
+      if (scrollPosition > 0 && scrollPosition < 1) {
+        console.log("сработал кейс середина");
+        el.classList.remove("top-mask-dark", "bottom-mask-dark");
+        el.classList.add("bot-top-mask-dark");
+      }
+    }
+  }
+};
+
 const Modal: React.FunctionComponent<IModalProps> = ({
   closeModal,
   children,
 }) => {
-  const innerRef: React.RefObject<HTMLDivElement> =
-    React.useRef<HTMLDivElement>(null);
+  const location = useLocation();
+
+  // функция блокировки сролла при монтировании
 
   const { lockScroll, unlockScroll } = useScrollLock();
-  const location = useLocation();
+  useEffect(() => {
+    lockScroll();
+    return () => unlockScroll();
+  }, [lockScroll, unlockScroll]);
+
+  // далее функция для определения тени
+
+  const containerRef = useRef<HTMLDivElement>(null);
+  const { scrollYProgress } = useScroll({ container: containerRef });
+
+  useEffect(() => {
+    if (
+      containerRef.current!.clientHeight <
+      containerRef.current!.children[0].clientHeight
+    ) {
+      handleShadow(containerRef, 0);
+    }
+  }, []);
+  useMotionValueEvent(scrollYProgress, "change", (latest) => {
+    handleShadow(containerRef, latest);
+  });
+
+  // далее функции для закрытия модлки
+
+  const innerRef: React.RefObject<HTMLDivElement> =
+    React.useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     function handleClickOutside(e: MouseEvent) {
@@ -41,23 +107,6 @@ const Modal: React.FunctionComponent<IModalProps> = ({
     };
   }, [closeModal]);
 
-  useEffect(() => {
-    lockScroll();
-    return () => unlockScroll();
-  }, [lockScroll, unlockScroll]);
-
-  const modalVariants = {
-    start: {
-      opacity: 0,
-    },
-    appearing: {
-      opacity: 1,
-    },
-    exit: {
-      opacity: 0,
-    },
-  };
-
   return createPortal(
     location.state.background && (
       <motion.section
@@ -75,7 +124,12 @@ const Modal: React.FunctionComponent<IModalProps> = ({
           }
           ref={innerRef}
         >
-          {children}
+          <div
+            ref={containerRef}
+            className={`h-fit max-h-[calc(100svh-12svh)] overflow-y-auto`}
+          >
+            {children}
+          </div>
           <div
             className={
               "absolute right-[-10px] top-[-12px] h-[70px] p-3 text-my-deep-gray hover:cursor-pointer sm:right-[7px] sm:top-[7px]"
