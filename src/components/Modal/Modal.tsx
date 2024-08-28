@@ -75,10 +75,7 @@ const Modal: React.FunctionComponent<IModalProps> = ({
           }
           ref={innerRef}
         >
-          <div className={`h-fit max-h-[calc(100svh-12svh)] overflow-y-auto`}>
-            {/*TODO: тут сделать чтобы низ чайлда был под маской, типа уходит*/}
-            {children}
-          </div>
+          {children}
           <div
             className={
               "absolute right-[-10px] top-[-12px] h-[70px] p-3 text-my-deep-gray hover:cursor-pointer sm:right-[7px] sm:top-[7px]"
