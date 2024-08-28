@@ -7,12 +7,6 @@ export const ServiceLongRead: FunctionComponent = () => {
   const scrollableRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
     const parent: HTMLElement = scrollableRef.current!.parentElement!;
-    if (scrollableRef.current!.clientHeight - parent.clientHeight > 0) {
-      parent.classList.add("bottom-mask-dark");
-      parent.addEventListener("scroll", (e) => {
-        handleScroll(e);
-      });
-    }
 
     const handleScroll = (e: Event) => {
       const target = e.target as HTMLElement;
@@ -20,7 +14,6 @@ export const ServiceLongRead: FunctionComponent = () => {
       const targetScrollHeight: number = target.scrollHeight;
       const scrollPosition: number =
         targetScrollHeight - (target.scrollTop + targetHeight);
-      console.log(scrollPosition);
       switch (scrollPosition) {
         case targetScrollHeight - targetHeight: {
           target.classList.remove("top-mask-dark", "bot-top-mask-dark");
@@ -43,6 +36,15 @@ export const ServiceLongRead: FunctionComponent = () => {
         }
       }
     };
+    if (scrollableRef.current!.clientHeight - parent.clientHeight > 0) {
+      parent.classList.add("bottom-mask-dark");
+      parent.addEventListener("scroll", (e) => {
+        handleScroll(e);
+      });
+      parent.addEventListener("touchmove", handleScroll); // Добавляем обработчик для touchmove
+      parent.addEventListener("touchend", handleScroll); // Добавляем обработчик для touchend
+    }
+
     return () => {
       if (scrollableRef) {
         parent.removeEventListener("scroll", handleScroll);
