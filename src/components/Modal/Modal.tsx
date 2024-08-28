@@ -133,7 +133,7 @@ const Modal: React.FunctionComponent<IModalProps> = ({
         >
           <div
             ref={containerRef}
-            className={`h-fit max-h-[calc(100svh-5rem)] overflow-y-auto sm:max-h-[calc(100svh-7.5rem)]`}
+            className={`h-fit max-h-[calc(100dvh-5rem)] overflow-y-auto sm:max-h-[calc(100svh-7.5rem)]`}
           >
             {children}
           </div>
