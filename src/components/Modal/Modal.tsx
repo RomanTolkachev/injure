@@ -87,12 +87,15 @@ const Modal: React.FunctionComponent<IModalProps> = ({
 
   useEffect(() => {
     const container = containerRef.current!;
-    const handleScroll = (): void =>
-      handleShadow(containerRef, getScrollPosition(containerRef));
-    container.addEventListener("scroll", handleScroll);
-    return () => {
-      container.removeEventListener("scroll", handleScroll);
-    };
+    if (container.clientHeight < container.children[0].clientHeight) {
+      handleShadow(containerRef, 0);
+      const handleScroll = (): void =>
+        handleShadow(containerRef, getScrollPosition(containerRef));
+      container.addEventListener("scroll", handleScroll);
+      return () => {
+        container.removeEventListener("scroll", handleScroll);
+      };
+    }
   }, []);
   //   if (
   //     containerRef.current!.clientHeight <
