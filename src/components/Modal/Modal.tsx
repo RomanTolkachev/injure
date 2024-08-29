@@ -145,7 +145,7 @@ const Modal: React.FunctionComponent<IModalProps> = ({
           </div>
           <div
             className={
-              "absolute right-[-10px] top-[-12px] h-[70px] p-3 text-my-deep-gray hover:cursor-pointer lg:right-[7px] lg:top-[7px]"
+              "absolute right-[-10px] top-[-12px] h-[70px] w-[70px] p-3 text-my-deep-gray hover:cursor-pointer lg:right-[7px] lg:top-[7px]"
             }
             onClick={closeModal}
           >
