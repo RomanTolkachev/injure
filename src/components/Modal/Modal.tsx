@@ -41,7 +41,7 @@ const handleShadow = (
       break;
     }
     default: {
-      if (scrollPosition > 0 && scrollPosition < 1) {
+      if (scrollPosition === 0.5) {
         console.log("сработал кейс середина");
         el.classList.remove("top-mask-dark", "bottom-mask-dark");
         el.classList.add("bot-top-mask-dark");
@@ -67,28 +67,51 @@ const Modal: React.FunctionComponent<IModalProps> = ({
   // далее функция для определения тени
 
   const containerRef = useRef<HTMLDivElement>(null);
-  const { scrollYProgress } = useScroll({ container: containerRef });
+  // const { scrollYProgress } = useScroll({ container: containerRef });
+
+  const getScrollPosition = (ref: React.RefObject<any>): 0 | 0.5 | 1 => {
+    const containerHeight = ref.current!.clientHeight;
+    const scrollTop = Math.ceil(ref.current!.scrollTop);
+    const childrenHeight = ref.current!.children[0].clientHeight;
+    if (scrollTop === 0) {
+      console.log("мы наверху");
+      return 0;
+    } else if (scrollTop + containerHeight >= childrenHeight) {
+      console.log("мы снизу");
+      return 1;
+    } else {
+      console.log("мы в середине");
+      return 0.5;
+    }
+  };
 
   useEffect(() => {
-    if (
-      containerRef.current!.clientHeight <
-      containerRef.current!.children[0].clientHeight
-    ) {
-      handleShadow(containerRef, 0);
-    }
+    const container = containerRef.current!;
+    const handleScroll = (): void =>
+      handleShadow(containerRef, getScrollPosition(containerRef));
+    container.addEventListener("scroll", handleScroll);
+    return () => {
+      container.removeEventListener("scroll", handleScroll);
+    };
   }, []);
-  useMotionValueEvent(scrollYProgress, "change", (latest) => {
-    if (
-      containerRef.current!.clientHeight >=
-      containerRef.current!.children[0].clientHeight
-    ) {
-      return;
-    }
-    console.log("сработал юз моушен вэлью");
-    handleShadow(containerRef, latest);
-  });
+  //   if (
+  //     containerRef.current!.clientHeight <
+  //     containerRef.current!.children[0].clientHeight
+  //   ) {
+  //     handleShadow(containerRef, 0);
+  //   }
+  // }, []);
+  // useMotionValueEvent(scrollYProgress, "change", (latest) => {
+  //   if (
+  //     containerRef.current!.clientHeight >=
+  //     containerRef.current!.children[0].clientHeight
+  //   ) {
+  //     return;
+  //   }
+  //   console.log("сработал юз моушен вэлью");
+  //   handleShadow(containerRef, latest);
 
-  // далее функции для закрытия модлки
+  // далее функции для закрытия модалки
 
   const innerRef: React.RefObject<HTMLDivElement> =
     React.useRef<HTMLDivElement>(null);
