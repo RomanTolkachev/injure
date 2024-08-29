@@ -20,15 +20,15 @@
     }
 
     .top-mask-dark {
-        background: radial-gradient(circle at 50% -200%, #514242 55%, transparent 68%);;
+        background: linear-gradient(0deg, rgba(0,0,0,0) 95%, rgba(66,66,66,0.28) 100%);
     }
 
     .bot-top-mask-dark {
-        background: radial-gradient(circle at 50% -200%, #514242 55%, transparent 68%), radial-gradient(circle at 50% 300%, #514242 55%, transparent 68%);
+        background: linear-gradient(0deg, rgba(0,0,0,0) 95%, rgba(66,66,66,0.28) 100%), linear-gradient(rgba(0,0,0,0) 95%, rgba(66,66,66,0.28) 100%);;
     }
 
     .bottom-mask-dark {
-        background: radial-gradient(circle at 50% 300%, #514242 55%, transparent 68%);
+        background: linear-gradient(rgba(0,0,0,0) 95%, rgba(66,66,66,0.28) 100%);
     }
 
 
