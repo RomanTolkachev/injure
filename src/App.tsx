@@ -12,6 +12,7 @@ import { Header } from "./components/Header/Header";
 import { Footer } from "./components/Footer";
 import Modal from "./components/Modal/Modal";
 import { ServiceLongRead } from "./components/Modal/serviceLongRead";
+import { ContainerIfNoBackground } from "./pages/ContainerIfNoBackground";
 
 function App(): React.JSX.Element {
   const location = useLocation();
@@ -20,11 +21,11 @@ function App(): React.JSX.Element {
   const isDynamicRoute = location.pathname.startsWith("/services/");
 
   const memoizedLocation = useMemo(() => {
-    if (isDynamicRoute) {
+    if (isDynamicRoute && background) {
       return { ...location, pathname: "/services" };
     }
     return location;
-  }, [isDynamicRoute, location]);
+  }, [background, isDynamicRoute, location]);
 
   const closeModal = useCallback(() => {
     return navigate(-1);
@@ -48,6 +49,12 @@ function App(): React.JSX.Element {
               <Route
                 path="/services"
                 element={<AnimatedPageRouting children={<Services />} />}
+              ></Route>
+              <Route
+                path={"services/:serviceId"}
+                element={
+                  <ContainerIfNoBackground children={<ServiceLongRead />} />
+                }
               />
               <Route
                 path="/team"

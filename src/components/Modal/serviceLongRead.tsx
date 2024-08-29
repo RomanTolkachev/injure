@@ -3,11 +3,15 @@ import { Params, useParams } from "react-router-dom";
 import { services } from "../../services";
 import { ImgCustom } from "../utils/ImgCustom";
 
-export const ServiceLongRead: FunctionComponent = () => {
+interface IProps {
+  className?: string;
+}
+
+export const ServiceLongRead: FunctionComponent<IProps> = ({ className }) => {
   const { serviceId }: Params<string> = useParams();
   const article = services.filter((item) => item.id === serviceId);
   return (
-    <article className={`flex h-fit w-full flex-col px-8`}>
+    <article className={`${className} flex h-fit w-full flex-col px-8`}>
       <div className="h-fit">
         <h4
           className={
