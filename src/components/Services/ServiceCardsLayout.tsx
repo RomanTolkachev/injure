@@ -3,6 +3,7 @@ import { ServiceCard } from "./ServiceCard";
 import { services } from "../../services";
 import { motion } from "framer-motion";
 import { Link, useLocation } from "react-router-dom";
+import { IServiceItem } from "../../services/utils/types";
 
 const parentVariants = {
   start: {},
@@ -26,7 +27,9 @@ export const ServiceCardsLayout: FunctionComponent = () => {
     console.log(location.state);
   };
   const location = useLocation();
-  const filtered = services.filter((item) => item.type === "physical");
+  const filtered: IServiceItem[] = services.filter(
+    (item: IServiceItem) => item.type === "physical",
+  );
 
   return (
     <motion.ul

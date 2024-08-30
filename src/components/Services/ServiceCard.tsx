@@ -1,16 +1,11 @@
 import { motion } from "framer-motion";
 import React, { FunctionComponent, useState } from "react";
 import { Sprite } from "../Sprite";
+import { IServiceItem } from "../../services/utils/types";
 
 interface IServiceCard {
   className?: string;
-  serviceData: {
-    title: string;
-    type: string;
-    content: string;
-    image?: string;
-    size?: string;
-  };
+  serviceData: IServiceItem;
 }
 
 export const ServiceCard: FunctionComponent<IServiceCard> = ({

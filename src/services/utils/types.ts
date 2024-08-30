@@ -26,4 +26,13 @@ export interface INews {
   id?: string;
 }
 
+export interface IServiceItem {
+  title: string;
+  type: string;
+  image: string;
+  id: string;
+  content: string;
+  size?: string;
+}
+
 export type TAppDispatch = {};
