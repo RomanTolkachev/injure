@@ -1,4 +1,4 @@
-import React, { FunctionComponent } from "react";
+import React, { FunctionComponent, useMemo } from "react";
 import { ServiceCard } from "./ServiceCard";
 import { services } from "../../services";
 import { motion } from "framer-motion";
@@ -21,18 +21,28 @@ const listVariants = {
   end: { opacity: 1 },
 };
 
-export const ServiceCardsLayout: FunctionComponent = () => {
+interface IProps {
+  currentType: "physical" | "business";
+}
+
+export const ServiceCardsLayout: FunctionComponent<IProps> = ({
+  currentType,
+}) => {
   const handleClick = (e: React.MouseEvent<HTMLLIElement>) => {
     e.preventDefault();
     console.log(location.state);
   };
   const location = useLocation();
-  const filtered: IServiceItem[] = services.filter(
-    (item: IServiceItem) => item.type === "physical",
-  );
+  const filtered: IServiceItem[] = useMemo(() => {
+    return services.filter((item: IServiceItem) => item.type === currentType);
+  }, [currentType]);
+  // const filtered: IServiceItem[] = services.filter(
+  //   (item: IServiceItem) => item.type === currentType,
+  // );
 
   return (
     <motion.ul
+      key={currentType}
       variants={parentVariants}
       initial="start"
       animate="end"

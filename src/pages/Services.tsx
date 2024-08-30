@@ -26,8 +26,8 @@ export const Services: FunctionComponent = () => {
             animate={{
               boxShadow:
                 currentType === "physical"
-                  ? "-4px 3px 8px 1px rgba(34, 60, 80, 0.2)"
-                  : "-4px 3px 8px 1px rgba(34, 60, 80, 0)",
+                  ? "-4px 3px 7px 3px rgba(34, 60, 80, 0.2)"
+                  : "-4px 3px 7px 3px rgba(34, 60, 80, 0)",
               color: currentType === "physical" ? "#211C1C" : "#B7B7B7",
             }}
             className={"text-nowrap rounded-2xl p-4 text-center"}
@@ -39,8 +39,8 @@ export const Services: FunctionComponent = () => {
             animate={{
               boxShadow:
                 currentType === "business"
-                  ? "-4px 3px 8px 1px rgba(34, 60, 80, 0.2)"
-                  : "-4px 3px 8px 1px rgba(34, 60, 80, 0)",
+                  ? "-4px 3px 7px 3px rgba(34, 60, 80, 0.2)"
+                  : "-4px 3px 7px 3px rgba(34, 60, 80, 0)",
               color: currentType === "business" ? "#211C1C" : "#B7B7B7",
             }}
             className={"text-nowrap rounded-2xl p-4 text-center"}
@@ -51,7 +51,7 @@ export const Services: FunctionComponent = () => {
         </motion.ul>
       </nav>
       <div>
-        <ServiceCardsLayout />
+        <ServiceCardsLayout currentType={currentType} />
       </div>
       <CallUs employee={team[1]}></CallUs>
     </div>
