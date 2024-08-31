@@ -17,12 +17,12 @@ export const Services: FunctionComponent = () => {
         className={"mb-10 2xl:mb-14"}
       />
       <nav className={"pt-5"}>
-        <motion.ul
+        <div
           className={
             "border-my-gray-light mx-auto grid w-fit grid-cols-2 gap-2 overflow-hidden rounded-3xl border p-1 text-sm font-bold sm:text-xl md:text-3xl [&>*]:first-letter:capitalize"
           }
         >
-          <motion.li
+          <motion.button
             animate={{
               boxShadow:
                 currentType === "physical"
@@ -34,8 +34,8 @@ export const Services: FunctionComponent = () => {
             onClick={() => setCurrentType("physical")}
           >
             частным клиентам
-          </motion.li>
-          <motion.li
+          </motion.button>
+          <motion.button
             animate={{
               boxShadow:
                 currentType === "business"
@@ -47,8 +47,8 @@ export const Services: FunctionComponent = () => {
             onClick={() => setCurrentType("business")}
           >
             бизнесу
-          </motion.li>
-        </motion.ul>
+          </motion.button>
+        </div>
       </nav>
       <div>
         <ServiceCardsLayout currentType={currentType} />
