@@ -34,7 +34,7 @@ export const Services: FunctionComponent = () => {
               "pointer-events-auto text-nowrap rounded-2xl p-4 text-center"
             }
             onClick={() => setCurrentType("physical")}
-            onTouchStart={() => setCurrentType("physical")}
+            onTap={() => setCurrentType("physical")}
           >
             частным клиентам
           </motion.button>
@@ -50,7 +50,7 @@ export const Services: FunctionComponent = () => {
               "pointer-events-auto text-nowrap rounded-2xl p-4 text-center"
             }
             onClick={() => setCurrentType("business")}
-            onTouchStart={() => setCurrentType("business")}
+            onTap={() => setCurrentType("business")}
           >
             бизнесу
           </motion.button>
