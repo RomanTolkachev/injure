@@ -22,32 +22,32 @@ export const Services: FunctionComponent = () => {
             "border-my-gray-light mx-auto grid w-fit grid-cols-2 gap-2 overflow-hidden rounded-3xl border p-1 text-sm font-bold sm:text-xl md:text-3xl [&>*]:first-letter:capitalize"
           }
         >
-          <motion.button
-            animate={{
-              boxShadow:
-                currentType === "physical"
-                  ? "-4px 3px 7px 3px rgba(34, 60, 80, 0.2)"
-                  : "-4px 3px 7px 3px rgba(34, 60, 80, 0)",
-              color: currentType === "physical" ? "#211C1C" : "#B7B7B7",
-            }}
+          <button
+            // animate={{
+            //   boxShadow:
+            //     currentType === "physical"
+            //       ? "-4px 3px 7px 3px rgba(34, 60, 80, 0.2)"
+            //       : "-4px 3px 7px 3px rgba(34, 60, 80, 0)",
+            //   color: currentType === "physical" ? "#211C1C" : "#B7B7B7",
+            // }}
             className={"text-nowrap rounded-2xl p-4 text-center"}
             onClick={() => setCurrentType("physical")}
           >
             частным клиентам
-          </motion.button>
-          <motion.button
-            animate={{
-              boxShadow:
-                currentType === "business"
-                  ? "-4px 3px 7px 3px rgba(34, 60, 80, 0.2)"
-                  : "-4px 3px 7px 3px rgba(34, 60, 80, 0)",
-              color: currentType === "business" ? "#211C1C" : "#B7B7B7",
-            }}
+          </button>
+          <button
+            // animate={{
+            //   boxShadow:
+            //     currentType === "business"
+            //       ? "-4px 3px 7px 3px rgba(34, 60, 80, 0.2)"
+            //       : "-4px 3px 7px 3px rgba(34, 60, 80, 0)",
+            //   color: currentType === "business" ? "#211C1C" : "#B7B7B7",
+            // }}
             className={"text-nowrap rounded-2xl p-4 text-center"}
             onClick={() => setCurrentType("business")}
           >
             бизнесу
-          </motion.button>
+          </button>
         </div>
       </nav>
       <div>
