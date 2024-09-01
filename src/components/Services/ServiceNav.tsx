@@ -17,11 +17,9 @@ export const clickTapHandler = (
 ) => {
   if (e.type === "tap") {
     setStateAction(dispatchAttribute);
-    console.log("сработал тап");
   } else if (e.type === "click") {
     if ("isTrusted" in e && !e.isTrusted) return;
     setStateAction(dispatchAttribute);
-    console.log("сработал клик");
   }
 };
 
