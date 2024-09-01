@@ -30,15 +30,11 @@ export const ServiceCardsLayout: FunctionComponent<IProps> = ({
 }) => {
   const handleClick = (e: React.MouseEvent<HTMLLIElement>) => {
     e.preventDefault();
-    console.log(location.state);
   };
   const location = useLocation();
   const filtered: IServiceItem[] = useMemo(() => {
     return services.filter((item: IServiceItem) => item.type === currentType);
   }, [currentType]);
-  // const filtered: IServiceItem[] = services.filter(
-  //   (item: IServiceItem) => item.type === currentType,
-  // );
 
   return (
     <motion.ul
