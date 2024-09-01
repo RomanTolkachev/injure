@@ -4,11 +4,11 @@ import { ButtonToVideo } from "../buttons/ButtonToVideo";
 const femidaVariants = {
   start: {
     opacity: 0,
-    x: "100%",
+    x: "10%",
   },
   end: (loaded: boolean) => ({
     opacity: loaded ? 1 : 0,
-    x: loaded ? 0 : "100%",
+    x: loaded ? 0 : "10%",
     transition: {
       duration: 0.85,
       ease: "easeOut",
