@@ -27,7 +27,7 @@ export const Team: FunctionComponent = () => {
     <>
       <SectionDescription
         header="команда"
-        BGImage="/webp/sectionHeader/handShake.png"
+        BGImage="/webp/sectionHeader/handShake.webp"
         className={"mb-10 2xl:mb-14"}
       />
       <section className="container w-screen">

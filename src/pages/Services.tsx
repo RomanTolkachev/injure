@@ -13,8 +13,9 @@ export const Services: FunctionComponent = () => {
     <div className="">
       <SectionDescription
         header="услуги"
-        BGImage="/webp/sectionHeader/handShake.png"
+        BGImage="/webp/sectionHeader/books.webp"
         className={"mb-10 2xl:mb-14"}
+        imgPosition={"object-top"}
       />
       <nav className={"pt-5"}>
         <ServiceNav currentType={currentType} setCurrentType={setCurrentType} />

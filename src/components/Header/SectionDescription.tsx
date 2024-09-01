@@ -6,12 +6,14 @@ interface ISectionDescription {
   header: string;
   BGImage: string;
   className?: string;
+  imgPosition?: string;
 }
 
 export const SectionDescription: FunctionComponent<ISectionDescription> = ({
   header,
   BGImage,
   className,
+  imgPosition,
 }) => {
   return (
     <div
@@ -20,7 +22,7 @@ export const SectionDescription: FunctionComponent<ISectionDescription> = ({
       <img
         src={BGImage}
         alt="bg"
-        className="absolute z-[2] h-full w-full object-cover"
+        className={`${imgPosition} absolute z-[2] h-full w-full object-cover`}
       />
       <div className="absolute z-[3] h-full w-full bg-my-blue-light opacity-30"></div>
       <div className="absolute z-[4] h-full w-full md:p-5 lg:p-7 xl:p-10">

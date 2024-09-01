@@ -8,8 +8,9 @@ export const About: FunctionComponent = () => {
     <>
       <SectionDescription
         header={"о компании"}
-        BGImage={"/webp/sectionHeader/handShake.png"}
+        BGImage="/webp/sectionHeader/about.webp"
         className={"mb-10 2xl:mb-14"}
+        imgPosition={"object-bottom"}
       />
       <CallUs employee={team[2]} />;
     </>
