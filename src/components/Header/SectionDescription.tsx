@@ -19,11 +19,14 @@ export const SectionDescription: FunctionComponent<ISectionDescription> = ({
     <div
       className={`bg-cyan-[#1c3749] relative mx-auto mb-10 aspect-[3] w-full text-my-white md:aspect-[5.7] ${className}`}
     >
-      <img
-        src={BGImage}
-        alt="bg"
-        className={`${imgPosition} absolute z-[2] h-full w-full object-cover`}
-      />
+      <div className={"h-full w-full"}>
+        <img
+          src={BGImage}
+          alt="bg"
+          className={`${imgPosition} absolute z-[2] h-full w-full object-cover`}
+        />
+      </div>
+
       <div className="absolute z-[3] h-full w-full bg-my-blue-light opacity-30"></div>
       <div className="absolute z-[4] h-full w-full md:p-5 lg:p-7 xl:p-10">
         <BroadCrumbs className={"hidden lg:block"} />
