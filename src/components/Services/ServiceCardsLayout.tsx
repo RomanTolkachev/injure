@@ -23,10 +23,12 @@ const listVariants = {
 
 interface IProps {
   currentType: "physical" | "business";
+  className?: string;
 }
 
 export const ServiceCardsLayout: FunctionComponent<IProps> = ({
   currentType,
+  className,
 }) => {
   const handleClick = (e: React.MouseEvent<HTMLLIElement>) => {
     e.preventDefault();
@@ -42,9 +44,7 @@ export const ServiceCardsLayout: FunctionComponent<IProps> = ({
       variants={parentVariants}
       initial="start"
       animate="end"
-      className={
-        "sm:grid-container small-grid-container mx-4 grid grid-flow-dense auto-rows-fr grid-cols-1 gap-2 py-4 sm:mx-auto sm:max-w-screen-sm sm:grid-cols-2 sm:gap-4 md:max-w-screen-md lg:max-w-screen-lg lg:grid-cols-3"
-      }
+      className={`${className} sm:grid-container small-grid-container mx-4 grid grid-flow-dense auto-rows-fr grid-cols-1 gap-2 py-4 sm:mx-auto sm:max-w-screen-sm sm:grid-cols-2 sm:gap-4 md:max-w-screen-md lg:max-w-screen-lg lg:grid-cols-3`}
     >
       {filtered.map((item, key) => {
         return (

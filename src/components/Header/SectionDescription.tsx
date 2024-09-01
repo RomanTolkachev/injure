@@ -17,7 +17,7 @@ export const SectionDescription: FunctionComponent<ISectionDescription> = ({
 }) => {
   return (
     <div
-      className={`bg-cyan-[#1c3749] relative mx-auto mb-10 aspect-[3] w-full text-my-white md:aspect-[5.7] ${className}`}
+      className={`bg-cyan-[#1c3749] relative mx-auto aspect-[3] w-full text-my-white md:aspect-[5.7] ${className}`}
     >
       <div className={"absolute top-0 z-[2] h-full w-full"}>
         <img

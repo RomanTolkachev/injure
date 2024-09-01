@@ -14,14 +14,17 @@ export const Services: FunctionComponent = () => {
       <SectionDescription
         header="услуги"
         BGImage="/webp/sectionHeader/books.webp"
-        className={"mb-10 2xl:mb-14"}
+        className={"sm:mb-6 lg:mb-10 2xl:mb-14"}
         imgPosition={"object-top"}
       />
-      <nav className={"pt-5"}>
+      <nav className={"pt-5 sm:mb-6 lg:mb-10"}>
         <ServiceNav currentType={currentType} setCurrentType={setCurrentType} />
       </nav>
       <div>
-        <ServiceCardsLayout currentType={currentType} />
+        <ServiceCardsLayout
+          currentType={currentType}
+          className={"sm:mb-6 lg:mb-10"}
+        />
       </div>
       <CallUs employee={team[1]}></CallUs>
     </div>
