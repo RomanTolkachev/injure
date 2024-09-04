@@ -12,7 +12,6 @@ export const Contacts: FunctionComponent = () => {
         header="контакты"
         BGImage="/webp/sectionHeader/contacts.webp"
         className={"mb-10 2xl:mb-14"}
-        // imgPosition={"object-bottom"}
       />
       <SectionAddressMapMytischi />
       <SectionAddressMapKhimky />

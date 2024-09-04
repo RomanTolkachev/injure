@@ -13,14 +13,7 @@ interface IAddress {
 export const Address: FunctionComponent<IAddress> = ({
   className,
   city = "город",
-  address = (
-    <div className="flex flex-col justify-center border-b-[1.5px] border-b-my-main-blue pb-3 text-news-preview tracking-tight text-my-gray sm:pb-5 sm:text-2xl lg:pb-12 lg:text-4xl">
-      <span className="">Российская Федерация,</span>
-      <span className="">Московская область,</span>
-      <span className="">г. Мытищи, ул. Летняя</span>
-      <span className="">строение 19, офис 9-18</span>
-    </div>
-  ),
+  address,
   firstContact,
   secondContact,
   socialMediaComponent = <SocialMedia />,

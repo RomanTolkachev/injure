@@ -12,7 +12,7 @@ const markText =
   "строение 19, офис 9-18";
 
 const khimkyAddress: ReactNode = (
-  <div className="flex flex-col justify-center border-b-[1.5px] border-b-my-main-blue pb-3 text-news-preview tracking-tight text-my-gray sm:pb-5 sm:text-2xl lg:pb-12 lg:text-4xl">
+  <div className="flex flex-col justify-center border-b-[1.5px] border-b-my-main-blue pb-3 text-news-preview tracking-tight text-my-gray sm:pb-5 sm:text-xl lg:pb-12 lg:text-4xl">
     <span className="">Российская Федерация,</span>
     <span className="">Московская область,</span>
     <span className="">г. Химки, ул. "добавить"</span>

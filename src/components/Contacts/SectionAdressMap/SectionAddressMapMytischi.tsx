@@ -11,10 +11,20 @@ const markText =
   "г. Мытищи, ул. Летняя\n" +
   "строение 19, офис 9-18";
 
+const mytischiAddress = (
+  <div className="flex flex-col justify-center border-b-[1.5px] border-b-my-main-blue pb-3 text-news-preview tracking-tight text-my-gray sm:pb-5 sm:text-2xl lg:pb-12 lg:text-4xl">
+    <span className="">Российская Федерация,</span>
+    <span className="">Московская область,</span>
+    <span className="">г. Мытищи, ул. Летняя</span>
+    <span className="">строение 19, офис 9-18</span>
+  </div>
+);
+
 export const SectionAddressMapMytischi: FunctionComponent = () => {
   return (
     <section className="container mx-auto my-6 grid w-full grid-cols-1 grid-rows-[auto_auto] gap-3 gap-x-24 px-8 tracking-tighter sm:my-10 sm:gap-y-6 lg:my-20 lg:max-w-[1024px] lg:grid-cols-2 lg:gap-y-10">
       <Address
+        address={mytischiAddress}
         city={"мытищи"}
         firstContact={
           <SmallHeaderAndInfoBrick
