@@ -37,9 +37,9 @@ export const Legal: FunctionComponent<ILegal> = ({
   };
   return (
     <div
-      className={`${className} grid grid-cols-1 grid-rows-[auto_auto] gap-1 lg:grid-cols-2`}
+      className={`${className} grid w-fit grid-cols-1 grid-rows-[auto_auto] gap-1`}
     >
-      <div className={"md:hidden"}>
+      <div className={""}>
         <motion.button
           onClick={handleClick}
           className={"flex items-center text-news-preview text-my-gray"}
@@ -55,7 +55,7 @@ export const Legal: FunctionComponent<ILegal> = ({
           </motion.span>
         </motion.button>
         <motion.ul // мобилка
-          className={"space-y-2 overflow-hidden"}
+          className={"space-y-1 overflow-hidden"}
           animate={isOpen ? motionShow : motionHide}
         >
           <li>
@@ -76,18 +76,18 @@ export const Legal: FunctionComponent<ILegal> = ({
           </li>
         </motion.ul>
       </div>
-      <div className={"hidden md:block"}>
-        <SmallHeaderAndInfoBrick
-          headerContent={registerNumberType}
-          spanContent={registerNumber}
-        />
-        <SmallHeaderAndInfoBrick headerContent={"ИНН"} spanContent={TIN} />
-        <SmallHeaderAndInfoBrick
-          className={"text-nowrap"}
-          headerContent={legalForm}
-          spanContent={legalBody}
-        />
-      </div>
+      {/*<div className={"hidden md:block"}>*/}
+      {/*  <SmallHeaderAndInfoBrick*/}
+      {/*    headerContent={registerNumberType}*/}
+      {/*    spanContent={registerNumber}*/}
+      {/*  />*/}
+      {/*  <SmallHeaderAndInfoBrick headerContent={"ИНН"} spanContent={TIN} />*/}
+      {/*  <SmallHeaderAndInfoBrick*/}
+      {/*    className={"text-nowrap"}*/}
+      {/*    headerContent={legalForm}*/}
+      {/*    spanContent={legalBody}*/}
+      {/*  />*/}
+      {/*</div>*/}
     </div>
   );
 };

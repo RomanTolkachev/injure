@@ -13,8 +13,11 @@ export const Contacts: FunctionComponent = () => {
         BGImage="/webp/sectionHeader/contacts.webp"
         className={"mb-10 2xl:mb-14"}
       />
+      <SectionAddressMapMytischi
+        className={"border-b-[1.5px] border-b-my-main-blue"}
+      />
       <SectionAddressMapMytischi />
-      <SectionAddressMapKhimky />
+      {/*<SectionAddressMapKhimky />*/}
       <CallUs employee={team[3]} />;
     </>
   );

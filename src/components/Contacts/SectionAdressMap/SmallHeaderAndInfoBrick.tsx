@@ -17,21 +17,21 @@ export const SmallHeaderAndInfoBrick: FunctionComponent<IBrick> = ({
   return telephone ? (
     <div className={`${className} flex flex-col`}>
       <a
-        className="sm:text-my-gray-header text-news-preview text-my-gray sm:text-sm sm:font-bold lg:mb-1"
+        className="text-news-preview text-my-gray sm:text-sm sm:font-bold sm:text-my-gray-header"
         href={`mailto:${email}`}
       >
         {email}
       </a>
-      <a className="text-2xl" href={`tel:${telephone}`}>
+      <a className="text-xl" href={`tel:${telephone}`}>
         {telephone}
       </a>
     </div>
   ) : (
     <div className={`${className}`}>
-      <h5 className="sm:text-my-gray-header text-news-preview text-my-gray sm:text-sm sm:font-bold lg:mb-1">
+      <h5 className="text-news-preview text-my-gray sm:text-sm sm:font-bold sm:text-my-gray-header">
         {headerContent}
       </h5>
-      <span className="text-2xl">{spanContent}</span>
+      <span className="text-xl">{spanContent}</span>
     </div>
   );
 };

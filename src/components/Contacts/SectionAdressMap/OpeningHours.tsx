@@ -13,12 +13,12 @@ export const OpeningHours: FunctionComponent<IOpeningHours> = ({
 }) => {
   return (
     <div className={`w-full first-letter:capitalize ${className}`}>
-      <h5 className="sm:text-my-gray-header text-news-preview text-my-gray sm:text-sm sm:font-bold lg:mb-1">
+      <h5 className="text-news-preview text-my-gray sm:text-sm sm:font-bold sm:text-my-gray-header">
         режим работы
       </h5>
-      <div className="flex w-full flex-col sm:flex-row sm:gap-10 lg:justify-between">
-        <span className="text-2xl font-normal">{workDays}</span>
-        <span className="text-nowrap text-2xl font-normal">{workTime}</span>
+      <div className="flex w-full gap-6">
+        <span className="text-xl font-normal">{workDays}</span>
+        <span className="text-nowrap text-xl font-normal">{workTime}</span>
       </div>
     </div>
   );

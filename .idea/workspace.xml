@@ -6,7 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="36b4ee8f-85ff-4484-9f99-05238c6d8ecb" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Contacts/SectionAdressMap/SectionAddressMapKhimky.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Contacts/SectionAdressMap/SectionAddressMapKhimky.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Contacts/SectionAdressMap/Address.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Contacts/SectionAdressMap/Address.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Contacts/SectionAdressMap/Legal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Contacts/SectionAdressMap/Legal.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Contacts/SectionAdressMap/OpeningHours.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Contacts/SectionAdressMap/OpeningHours.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Contacts/SectionAdressMap/SectionAddressMapMytischi.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Contacts/SectionAdressMap/SectionAddressMapMytischi.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Contacts/SectionAdressMap/SmallHeaderAndInfoBrick.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Contacts/SectionAdressMap/SmallHeaderAndInfoBrick.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Contacts.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Contacts.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -148,7 +152,7 @@
       <workItem from="1725016617973" duration="12925000" />
       <workItem from="1725192934615" duration="5807000" />
       <workItem from="1725215045322" duration="8447000" />
-      <workItem from="1725462727384" duration="952000" />
+      <workItem from="1725462727384" duration="10040000" />
     </task>
     <servers />
   </component>
