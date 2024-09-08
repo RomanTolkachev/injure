@@ -6,7 +6,7 @@ import { WeHaveSomethingToSay } from "../components/About/WeHaveSomethingToSay";
 
 export const About: FunctionComponent = () => {
   return (
-    <>
+    <div className={"bg-my-white"}>
       <SectionDescription
         header={"о компании"}
         BGImage="/webp/sectionHeader/about.webp"
@@ -14,7 +14,7 @@ export const About: FunctionComponent = () => {
         imgPosition={"object-bottom"}
       />
       <WeHaveSomethingToSay />
-      <CallUs employee={team[2]} />;
-    </>
+      <CallUs employee={team[2]} />
+    </div>
   );
 };

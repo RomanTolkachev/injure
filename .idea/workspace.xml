@@ -5,28 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36b4ee8f-85ff-4484-9f99-05238c6d8ecb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/About/WeHaveSomethingToSay.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Contacts/SectionAdressMap/TryMap.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/actions/mapActions.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/reducers/headerReducer.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/reducers/mapReducer.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/utils/ymaps.d.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Contacts/SectionAdressMap/YandexMap.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Contacts/SectionAdressMap/YandexMap.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/utils/BroadCrumbs.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/utils/BroadCrumbs.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/About/WeHaveSomethingToSay.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/WeHaveSomethingToSay.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/About.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/About.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/hooks/typedUseSelector.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/hooks/typedUseSelector.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/reducers/root-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/reducers/root-reducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/utils/map-customization.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/utils/customization.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/utils/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/utils/types.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,7 +155,7 @@
       <workItem from="1725539549935" duration="599000" />
       <workItem from="1725544932541" duration="17632000" />
       <workItem from="1725783936846" duration="2505000" />
-      <workItem from="1725810037772" duration="11008000" />
+      <workItem from="1725810037772" duration="18072000" />
     </task>
     <servers />
   </component>
