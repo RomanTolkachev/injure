@@ -7,7 +7,7 @@ export const BroadCrumbs: FunctionComponent<{ className?: string }> = ({
   className,
 }) => {
   const location = useLocation();
-  const navList = useSelector((state) => state.app.navList);
+  const navList = useSelector((state) => state.headerState.navList);
 
   const getPath = (
     array: IMenuItem[],

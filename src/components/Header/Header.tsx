@@ -9,7 +9,7 @@ import { Overlay } from "../utils/Overlay";
 import { useSelectorTyped as useSelector } from "../../services/hooks/typedUseSelector";
 
 export const Header: FunctionComponent = () => {
-  const menuList = useSelector((store) => store.app.navList);
+  const menuList = useSelector((store) => store.headerState.navList);
   const [burgerOpen, setBurgerOpen] = useState<boolean>(false);
   return (
     <header className="fixed z-10 h-[79px] w-full border-b border-my-gray-medium bg-my-main-blue p-1.5 max-sm:px-4">

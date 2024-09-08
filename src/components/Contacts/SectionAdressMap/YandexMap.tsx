@@ -1,7 +1,7 @@
 import React, { FunctionComponent } from "react";
 import { Map, Placemark, YMaps } from "@pbe/react-yandex-maps";
 
-//api-maps.yandex.ru/2.1?fee7c7a6-093c-41b9-83e6-9ab1f4d6b6f8&lang=ru_RU // этот работает
+// api-maps.yandex.ru/2.1?fee7c7a6-093c-41b9-83e6-9ab1f4d6b6f8&lang=ru_RU // этот работает
 interface IYandexMap {
   coordinates: string;
   whereWeAre: string;

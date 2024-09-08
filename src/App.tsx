@@ -13,8 +13,11 @@ import { Footer } from "./components/Footer";
 import Modal from "./components/Modal/Modal";
 import { ServiceLongRead } from "./components/Modal/serviceLongRead";
 import { ContainerIfNoBackground } from "./pages/ContainerIfNoBackground";
+import { useSelectorTyped } from "./services/hooks/typedUseSelector";
 
 function App(): React.JSX.Element {
+  const { isMapLoaded } = useSelectorTyped((state) => state.mapState);
+
   const location = useLocation();
   const navigate = useNavigate();
   const background: string = location.state && location.state.background;

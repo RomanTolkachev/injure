@@ -1,7 +1,8 @@
+import { store } from "../../index";
+
 export interface IMenuItem {
   path: string;
   text: string;
-  BGImage?: string;
 }
 
 export interface IEmployee {
@@ -35,4 +36,4 @@ export interface IServiceItem {
   size?: string;
 }
 
-export type TAppDispatch = {};
+export type TAppDispatch = typeof store.dispatch;
