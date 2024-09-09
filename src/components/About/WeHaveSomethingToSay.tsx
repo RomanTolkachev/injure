@@ -7,7 +7,7 @@ const parentVariants = {
   end: {
     transition: {
       duration: 0.7,
-      delayChildren: 0.2,
+      delayChildren: 0.4,
     },
   },
 };
