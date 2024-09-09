@@ -1,6 +1,11 @@
-import { motion } from "framer-motion";
-import { FunctionComponent } from "react";
+import { motion, useAnimation } from "framer-motion";
+import { FunctionComponent, useEffect } from "react";
 import { team } from "../../services/team";
+import {
+  useDispatchTyped as useDispatch,
+  useSelectorTyped as useSelector,
+} from "../../services/hooks/typedUseSelector";
+import { setAnimated } from "../../services/actions/animationActions";
 
 const parentVariants = {
   start: {},
@@ -26,6 +31,23 @@ const childrenVariants = {
 };
 
 export const WeHaveSomethingToSay: FunctionComponent = () => {
+  const dispatch = useDispatch();
+  const { shouldAnimate } = useSelector((state) => state.animationState);
+  const controls = useAnimation();
+
+  // useEffect(() => {
+  //   shouldAnimate
+  //     ? controls
+  //       .start({ backgroundColor: "#B4C0FDFF" })
+  //       .then(() => {
+  //         return controls.start({ backgroundColor: "#183ef5" });
+  //       })
+  //       .then(() => dispatch(setAnimated()))
+  //     : controls.set({ backgroundColor: "#183ef5" });
+  // }, [controls, dispatch, shouldAnimate]);
+
+  useEffect(() => {}, []);
+
   return (
     <div className={"mx-auto w-full max-w-screen-lg sm:px-16"}>
       <div className={"rounded-2xl bg-white py-6 sm:py-8 md:py-12 lg:py-16"}>
