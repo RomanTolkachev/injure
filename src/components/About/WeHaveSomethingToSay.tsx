@@ -35,18 +35,18 @@ export const WeHaveSomethingToSay: FunctionComponent = () => {
   const { shouldAnimate } = useSelector((state) => state.animationState);
   const controls = useAnimation();
 
-  // useEffect(() => {
-  //   shouldAnimate
-  //     ? controls
-  //       .start({ backgroundColor: "#B4C0FDFF" })
-  //       .then(() => {
-  //         return controls.start({ backgroundColor: "#183ef5" });
-  //       })
-  //       .then(() => dispatch(setAnimated()))
-  //     : controls.set({ backgroundColor: "#183ef5" });
-  // }, [controls, dispatch, shouldAnimate]);
-
-  useEffect(() => {}, []);
+  useEffect(() => {
+    if (shouldAnimate) {
+      controls.start("start").then(() => {
+        return controls.start("end");
+      });
+    }
+    return () => {
+      if (shouldAnimate) {
+        dispatch(setAnimated());
+      }
+    };
+  }, [controls, dispatch, shouldAnimate]);
 
   return (
     <div className={"mx-auto w-full max-w-screen-lg sm:px-16"}>
@@ -56,22 +56,33 @@ export const WeHaveSomethingToSay: FunctionComponent = () => {
             "relative mx-auto mb-4 h-24 w-full sm:mb-8 sm:h-28 md:mb-10 md:h-36 lg:mb-12 lg:h-44"
           }
           variants={parentVariants}
-          initial="start"
-          animate="end"
+          animate={controls}
         >
-          {team.map((item, key) => {
-            return (
+          {team.map((item, key) =>
+            shouldAnimate ? (
               <motion.div
                 key={key}
                 custom={key}
-                className={`absolute top-0 aspect-square h-full overflow-hidden rounded-full`}
+                className="absolute top-0 aspect-square h-full overflow-hidden rounded-full"
                 variants={childrenVariants}
-                style={{ zIndex: `${team.length - key}` }}
+                style={{ zIndex: `${team.length - key}`, right: "40%" }}
               >
                 <img src={item.photoTeam} alt="image3" />
               </motion.div>
-            );
-          })}
+            ) : (
+              <div
+                key={key}
+                className="absolute top-0 aspect-square h-full overflow-hidden rounded-full"
+                style={{
+                  zIndex: `${team.length - key}`,
+                  transform: `translateX(calc(${(team.length / 2) * -50 + (team.length / 2) * 5}% + ${key * 95}%))`,
+                  right: "50%",
+                }}
+              >
+                <img src={item.photoTeam} alt="image3" />
+              </div>
+            ),
+          )}
         </motion.div>
         <h3
           className={
